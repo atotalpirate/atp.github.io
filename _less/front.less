@@ -1,31 +1,32 @@
 @import "elements";
-@import "../bower_components/flexbox.less/flexbox";
+@import "variables";
 
 
 
 /* OWL styles
-===============
-*/
+===============*/
+
 #intro {
-  border-bottom: 2px solid;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
+  height: 80%;
   width: 100%;
   #overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(255,255,255,.4);
+    background-color: @dice;
+    .opacity(@opacity: 0.5);
     position: relative;
     z-index: 1;
   }// overlay
 }// intro
 #home-carousel {
-  border-bottom: 2px solid;
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
+  height: 100%;
   .owl-wrapper-outer {
     height: 100%;
     .owl-wrapper {
@@ -39,12 +40,18 @@
     } //owl-wrapper
   } //owl-wrapper-outer
   .owl-controls {
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
     .owl-pagination {
-      position: absolute;
-      width: 60%;
-      top: 30%;
-      z-index: 5;
-      margin: 0 20%;
+      position: relative;
+      top: 50%;
+      width: 70%;
+      margin: 0 15%;
+      .transform(translateY(-50%));
       .owl-page {
         width: 33.3%;
         span {
@@ -71,3 +78,16 @@
     } //owl-pagination
   } //owl-controls
 } //home-carousel
+
+#declaration {
+  h1 {
+    line-height: 1;
+    color: @darkdice;
+    font-family: @headerfont;
+  }
+  p {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 115%;
+  }
+}

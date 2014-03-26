@@ -18,6 +18,11 @@ body {
   font-size: small;
   text-align: center;
 }
+.site {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
 h1,
 h2,
 h3,

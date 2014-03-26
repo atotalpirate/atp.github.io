@@ -1,3 +1,27 @@
+/* COLORS
+===========*/
+/* PHANTS
+
+font-family: 'Overlock SC', cursive;
+font-family: 'Nova Slim', cursive;
+font-family: 'PT Mono', ;
+font-family: 'Offside', cursive;
+font-family: 'Rationale', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Unica One', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Baumans', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Nova Cut', cursive;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Homenaje', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Bree Serif', serif;
+
+===========*/
 /*---------------------------------------------------
     LESS Elements 0.9
   ---------------------------------------------------
@@ -21,16 +45,17 @@
 .header .title a svg {
   width: 6em;
   height: 4em;
-  fill: #25cd7a;
+  fill: #ffffff;
 }
 .header .title a:hover svg {
-  fill: #25cd7a;
+  fill: #354d68;
 }
 .header .extra {
   float: right;
-  padding: 1.5em;
-  color: #25cd7a;
+  padding: .5em;
+  font-size: 2em;
+  color: #ffffff;
 }
 .header .extra:hover {
-  color: #47de93;
+  color: #354d68;
 }

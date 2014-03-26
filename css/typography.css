@@ -1,3 +1,49 @@
+/* COLORS
+===========*/
+/* PHANTS
+
+font-family: 'Overlock SC', cursive;
+font-family: 'Nova Slim', cursive;
+font-family: 'PT Mono', ;
+font-family: 'Offside', cursive;
+font-family: 'Rationale', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Unica One', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Baumans', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Nova Cut', cursive;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Homenaje', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Bree Serif', serif;
+
+===========*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 .header {
-  font-family: 'Nova Cut', sans-serif;
+  font-family: 'Megrim', cursive !important;
+}
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  line-height: 1.5;
 }
