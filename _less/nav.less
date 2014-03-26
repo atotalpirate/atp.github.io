@@ -1,0 +1,39 @@
+@import "variables";
+@import "elements";
+
+.header {
+  position:fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  a {
+  } // a
+  .title {
+    float: left;
+    margin: 0;
+    padding: 0;
+    a {
+      object {
+        width: 50px;
+      } // object
+      svg {
+        width: 6em;
+        height: 4em;
+        fill: @navcolor;
+      }
+      &:hover svg {
+        fill: @navcolor;
+      }
+    } //a
+  } // title
+  .extra {
+    float: right;
+    padding: 1.5em;
+    color: @navcolor;
+    &:hover {
+      color: @navhovercolor;
+    }
+  } // extra
+} // header
+
+.header.shrink {}

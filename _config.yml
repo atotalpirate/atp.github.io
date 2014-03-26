@@ -1,0 +1,7 @@
+name: atotalpirate
+markdown: redcarpet
+pygments: true
+
+
+assets: /bower_components
+images: /img

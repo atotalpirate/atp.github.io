@@ -1,0 +1,1 @@
+var vh=$(window).height();$(function(){function n(){return window.pageYOffset}var r=vh/2;$(window).scroll(function(){var e=n();e>=r?$(".header").addClass("shrink"):$(".header").removeClass("shrink")})});

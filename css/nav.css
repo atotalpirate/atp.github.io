@@ -1,0 +1,36 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.header .title {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.header .title a object {
+  width: 50px;
+}
+.header .title a svg {
+  width: 6em;
+  height: 4em;
+  fill: #25cd7a;
+}
+.header .title a:hover svg {
+  fill: #25cd7a;
+}
+.header .extra {
+  float: right;
+  padding: 1.5em;
+  color: #25cd7a;
+}
+.header .extra:hover {
+  color: #47de93;
+}

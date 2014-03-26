@@ -1,0 +1,67 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* OWL styles
+===============
+*/
+#intro {
+  border-bottom: 2px solid;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+#intro #overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 1;
+}
+#home-carousel {
+  border-bottom: 2px solid;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+#home-carousel .owl-wrapper-outer {
+  height: 100%;
+}
+#home-carousel .owl-wrapper-outer .owl-wrapper {
+  height: 100%;
+}
+#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item {
+  height: 100%;
+}
+#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div {
+  height: 100%;
+}
+#home-carousel .owl-controls .owl-pagination {
+  position: absolute;
+  width: 60%;
+  top: 30%;
+  z-index: 5;
+  margin: 0 20%;
+}
+#home-carousel .owl-controls .owl-pagination .owl-page {
+  width: 33.3%;
+}
+#home-carousel .owl-controls .owl-pagination .owl-page span {
+  display: block;
+  width: 66%;
+  margin: 0 auto;
+  height: 0;
+  filter: alpha(opacity=50);
+  opacity: 1;
+  padding-bottom: 67%;
+  background: url('../img/atp.svg');
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 1em solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}

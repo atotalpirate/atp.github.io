@@ -1,0 +1,73 @@
+@import "elements";
+@import "../bower_components/flexbox.less/flexbox";
+
+
+
+/* OWL styles
+===============
+*/
+#intro {
+  border-bottom: 2px solid;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  #overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.4);
+    position: relative;
+    z-index: 1;
+  }// overlay
+}// intro
+#home-carousel {
+  border-bottom: 2px solid;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  .owl-wrapper-outer {
+    height: 100%;
+    .owl-wrapper {
+      height: 100%;
+      .owl-item {
+        height: 100%;
+        div {
+          height: 100%;
+        } //div
+      } //owl-item
+    } //owl-wrapper
+  } //owl-wrapper-outer
+  .owl-controls {
+    .owl-pagination {
+      position: absolute;
+      width: 60%;
+      top: 30%;
+      z-index: 5;
+      margin: 0 20%;
+      .owl-page {
+        width: 33.3%;
+        span {
+          display: block;
+          width: 66%;
+          margin: 0 auto;
+          height: 0;
+          filter: alpha(opacity=50);
+          opacity: 1;
+          padding-bottom: 67%;
+          background: url('../img/atp.svg');
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          border-radius: 100%;
+          border: 1em solid white;
+          background-color: rgba(255, 255, 255, 0.5);
+        } //span
+      } //owl-page
+      .active {
+        span {
+
+        } //span
+      } //active
+    } //owl-pagination
+  } //owl-controls
+} //home-carousel

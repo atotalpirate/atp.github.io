@@ -1,0 +1,69 @@
+<div class="footer">
+  <div class="contact">
+    <p>
+      Your Name<br />
+      What You Are<br />
+      you@example.com
+    </p>
+  </div>
+  <div class="contact">
+    <p>
+      <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+      <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+    </p>
+  </div>
+</div>
+</div>
+
+
+
+<script src="{{ site.assets }}/jquery/dist/jquery.min.js"></script>
+
+
+{% if page.title == 'front' %}
+
+<script src="{{ site.assets }}/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+  $("#home-carousel").owlCarousel({
+
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+  });
+
+});
+
+</script>
+
+<script>
+
+  var viewportHeight = $(window).height();
+
+  $("#home-carousel").css({
+    "height": viewportHeight / 1.2
+  });
+
+  $("#intro").css({
+    "height": viewportHeight / 1.2
+  });
+
+</script>
+
+{% endif %}
+
+<script src="js/atp.js"></script>
+</body>
+</html>
