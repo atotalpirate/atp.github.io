@@ -20,10 +20,10 @@
 <script src="{{ site.assets }}/jquery/dist/jquery.min.js"></script>
 
 
-{% if page.title == 'front' %}
+{% if page.title == 'Home' %}
 
 <script src="{{ site.assets }}/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
-
+<script src="{{ site.assets }}/FitText.js/jquery.fittext.js"></script>
 <script>
 
 $(document).ready(function() {
@@ -31,9 +31,8 @@ $(document).ready(function() {
   $("#home-carousel").owlCarousel({
 
       navigation : false, // Show next and prev buttons
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
+      singleItem : true,
+      transitionStyle : "fade"
 
       // "singleItem:true" is a shortcut for:
       // items : 1,
@@ -46,21 +45,23 @@ $(document).ready(function() {
 
 });
 
-</script>
-
-<script>
-
-  var viewportHeight = $(window).height();
-
-  $("#home-carousel").css({
-    "height": viewportHeight / 1.2
-  });
-
-  $("#intro").css({
-    "height": viewportHeight / 1.2
-  });
+  $("#declaration h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' })
 
 </script>
+
+ <!--script>
+//
+//   var viewportHeight = $(window).height();
+//
+//   $("#home-carousel").css({
+//     "height": viewportHeight / 1.2
+//   });
+//
+//   $("#intro").css({
+//     "height": viewportHeight / 1.2
+//   });
+//
+// </script-->
 
 {% endif %}
 

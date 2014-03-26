@@ -4,29 +4,58 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
+/* COLORS
+===========*/
+/* PHANTS
+
+font-family: 'Overlock SC', cursive;
+font-family: 'Nova Slim', cursive;
+font-family: 'PT Mono', ;
+font-family: 'Offside', cursive;
+font-family: 'Rationale', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Unica One', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Baumans', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Nova Cut', cursive;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Homenaje', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Bree Serif', serif;
+
+===========*/
 /* OWL styles
-===============
-*/
+===============*/
 #intro {
-  border-bottom: 2px solid;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
+  height: 80%;
   width: 100%;
 }
 #intro #overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #7b99bb;
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  filter: alpha(opacity=50);
   position: relative;
   z-index: 1;
 }
 #home-carousel {
-  border-bottom: 2px solid;
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
+  height: 100%;
 }
 #home-carousel .owl-wrapper-outer {
   height: 100%;
@@ -40,12 +69,24 @@
 #home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div {
   height: 100%;
 }
-#home-carousel .owl-controls .owl-pagination {
+#home-carousel .owl-controls {
   position: absolute;
-  width: 60%;
-  top: 30%;
+  top: 0;
+  margin-top: 0;
   z-index: 5;
-  margin: 0 20%;
+  width: 100%;
+  height: 100%;
+}
+#home-carousel .owl-controls .owl-pagination {
+  position: relative;
+  top: 50%;
+  width: 70%;
+  margin: 0 15%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 #home-carousel .owl-controls .owl-pagination .owl-page {
   width: 33.3%;
@@ -64,4 +105,14 @@
   border-radius: 100%;
   border: 1em solid white;
   background-color: rgba(255, 255, 255, 0.5);
+}
+#declaration h1 {
+  line-height: 1;
+  color: #354d68;
+  font-family: 'Bree Serif', serif;
+}
+#declaration p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 115%;
 }
