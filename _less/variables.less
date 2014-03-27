@@ -1,3 +1,13 @@
+/* Widths of stuffs
+===========*/
+
+/* figure out how you'll modulate widths so only one media query is neccessary.
+
+@sidemargins:         10%;
+
+*/
+
+
 /* COLORS
 ===========*/
 
@@ -5,12 +15,21 @@
 @grey:                 lighten(@black, 50%);
 @lightergrey:          lighten(@black, 50%);
 
-@lightdice:            lighten(@dice, 30%);
-@dice:                 rgba(123,153,187,1);
-@darkdice:             darken(@dice, 30%);
+/* rename this to blueink */
+@lightblueink:         lighten(@blueink, 30%);
+@blueink:              rgba(123,153,187,1);
+@darkblueink:          darken(@blueink, 30%);
+
+@lightredink:          lighten(@redink, 30%);
+@redink:               #ea4743;
+@darkredink:           darken(@redink, 30%);
+
+/* COLOR ASSIGNMENTS
+===========*/
 
 @navcolor:             #fff;
-@navhovercolor:        @darkdice;
+@navhovercolor:        @darkblueink;
+@defaultfontcolor:     @blueink;
 
 /* PHANTS
 
