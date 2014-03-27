@@ -1,4 +1,9 @@
+/* Widths of stuffs
+===========*/
 /* COLORS
+===========*/
+/* rename this to blueink */
+/* COLOR ASSIGNMENTS
 ===========*/
 /* PHANTS
 
@@ -34,6 +39,12 @@ font-family: 'Bree Serif', serif;
 body {
   font-family: 'Open Sans', sans-serif !important;
   font-size: 16px;
+  color: #7b99bb;
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 14px;
+  }
 }
 h1,
 h2,

@@ -1,12 +1,18 @@
 @import "variables";
 @import "elements";
 
+@fontsize:                  16px;
+@smallfontsize:             @fontsize - 2;
+
 .header {
   font-family: @navfont !important;
 }
 body {
   font-family: @defaultfont !important;
-  font-size: 16px;
+  font-size: @fontsize;
+  @media screen and (min-width: 1000px){
+    font-size: @smallfontsize;
+  }
   color: @defaultfontcolor;
 }
 
