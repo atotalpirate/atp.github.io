@@ -41,7 +41,7 @@ body {
   font-size: 16px;
   color: #7b99bb;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 400px) {
   body {
     font-size: 14px;
   }

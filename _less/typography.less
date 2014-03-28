@@ -1,8 +1,10 @@
 @import "variables";
 @import "elements";
 
-@fontsize:                  16px;
-@smallfontsize:             @fontsize - 2;
+@golden-ratio: 1.61803398875;
+
+@basefontsize:                  16px;
+@mobilebasefontsize:             @fontsize - 2;
 
 .header {
   font-family: @navfont !important;
@@ -10,7 +12,7 @@
 body {
   font-family: @defaultfont !important;
   font-size: @fontsize;
-  @media screen and (min-width: 1000px){
+  @media screen and (max-width: 400px){
     font-size: @smallfontsize;
   }
   color: @defaultfontcolor;
@@ -20,3 +22,15 @@ body {
 h1, h2, h3, h4, h5, h6, p, ul, ol, li {
   line-height: 1.5;
 }
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
