@@ -14,8 +14,6 @@ body {
 }
 body {
   background-color: ;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
   text-align: center;
 }
 .site {
@@ -51,18 +49,6 @@ a:visited {
 /* Home
 /*
 /*****************************************************************************/
-.posts {
-  list-style-type: none;
-  margin-bottom: 2em;
-}
-.posts li {
-  line-height: 1.75em;
-}
-.posts span {
-  color: ;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
 /*****************************************************************************/
 /*
 /* Site

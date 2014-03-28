@@ -1,11 +1,10 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 /* Widths of stuffs
 ===========*/
+/* figure out how you'll modulate widths so only one media query is neccessary.
+
+@sidemargins:         10%;
+
+*/
 /* COLORS
 ===========*/
 /* rename this to blueink */
@@ -33,6 +32,12 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Bree Serif', serif;
 
 ===========*/
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 /* OWL styles
 ===============*/
 #intro {
@@ -110,32 +115,4 @@ font-family: 'Bree Serif', serif;
   border-radius: 100%;
   border: 1em solid white;
   background-color: rgba(255, 255, 255, 0.5);
-}
-#declaration h1 {
-  line-height: 1;
-  color: #354d68;
-  font-family: 'Bree Serif', serif;
-}
-#declaration p {
-  width: 60%;
-  margin: 0 auto;
-  font-size: 115%;
-}
-@media screen and (min-width: 1000px) {
-  #declaration p {
-    width: 50%;
-    margin: 0 25%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  #declaration p {
-    width: 80%;
-    margin: 0 10%;
-  }
-}
-@media screen and (max-width: 500px) {
-  #declaration p {
-    width: 90%;
-    margin: 0 5%;
-  }
 }
