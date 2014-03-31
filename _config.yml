@@ -6,3 +6,5 @@ permalink: /blog/:year/:month/:day/:title
 
 assets: /bower_components
 images: /img
+
+svg: _includes/svg

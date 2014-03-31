@@ -59,11 +59,18 @@
           margin: 0 auto;
           height: 0;
           padding-bottom: 67%;
-          background: url('../img/atp.svg');
-          .rounded(@radius: percentage(100));
-          border: 1em solid white;
-          background-color: rgba(255, 255, 255, 0.5);
-        } //span
+          background-repeat: no-repeat;
+          .opacity(@opacity: 1);
+        }
+        &:nth-child(1) > span {
+          background: url('../img/svg/code-icon.svg') no-repeat;
+        }
+        &:nth-child(2) > span {
+          background: url('../img/svg/design-icon.svg') no-repeat;
+        }
+        &:nth-child(3) > span {
+          background: url('../img/svg/atp.svg') no-repeat;
+        }
       } //owl-page
       .active {
         span {
