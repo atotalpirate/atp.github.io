@@ -2,6 +2,7 @@ name: Jimmy Holway
 markdown: redcarpet
 pygments: true
 
+permalink: /blog/:year/:month/:day/:title
 
 assets: /bower_components
 images: /img
