@@ -1,19 +1,21 @@
-<div class="footer">
-  <div class="contact">
-    <p>
-      Your Name<br />
-      What You Are<br />
-      you@example.com
-    </p>
-  </div>
-  <div class="contact">
-    <p>
-      <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-      <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-    </p>
-  </div>
-</div>
-</div>
+  <div class="footer">
+    <div class="contact">
+      <p>Be Social.</p>
+      <div class="footeritem">
+        <a target="_blank" href="https://github.com/atotalpirate">{% include github.svg %}</a><br />
+      </div>
+      <div class="footeritem">
+        <a target="_blank" href="https://twitter.com/atotalpirate">{% include twitter.svg %}</a><br />
+      </div>
+      <div class="footeritem">
+        <a target="_blank" href="https://www.instagram.com/atotalpirate">{% include instagram.svg %}</a><br />
+      </div>
+      <div class="footeritem">
+        <a target="_blank" href="https://www.behance.net/atotalpirate">{% include behance.svg %}</a><br />
+      </div>
+    </div><!--contact-->
+  </div><!--footer-->
+</div><!--site-->
 
 
 
@@ -43,25 +45,30 @@ $(document).ready(function() {
 
   });
 
+
+  $("#work-carousel").owlCarousel({
+
+      navigation : true, // Show next and prev buttons
+      pagination: false,
+      navigationText : ["❮","❯"],
+      items : 5,
+      transitionStyle : "fade"
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1,
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+  });
+
+
 });
 
   $("#declaration h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' })
 
 </script>
-
- <!--script>
-//
-//   var viewportHeight = $(window).height();
-//
-//   $("#home-carousel").css({
-//     "height": viewportHeight / 1.2
-//   });
-//
-//   $("#intro").css({
-//     "height": viewportHeight / 1.2
-//   });
-//
-// </script-->
 
 {% endif %}
 

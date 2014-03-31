@@ -38,29 +38,129 @@ font-family: 'Bree Serif', serif;
   top: 0;
   width: 100%;
   z-index: 1000;
+  border-bottom: 2px solid transparent;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .header .title {
   float: left;
   margin: 0;
   padding: 0;
 }
-.header .title a object {
-  width: 50px;
-}
 .header .title a svg {
   width: 6em;
   height: 4em;
   fill: #ffffff;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .header .title a:hover svg {
   fill: #354d68;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .header .extra {
   float: right;
   padding: .5em;
   font-size: 2em;
   color: #ffffff;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .header .extra:hover {
   color: #354d68;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/*
+  Dark blue
+================|
+*/
+.dark {
+  border-bottom: 2px solid #354d68;
+  background-color: rgba(255, 255, 255, 0.8);
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark .title a svg {
+  fill: #354d68;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark .title a:hover svg {
+  fill: #354d68;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark .extra {
+  color: #354d68;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark .extra:hover {
+  color: #354d68;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/*
+  Dark red
+================|
+*/
+.darkred {
+  border-bottom: 2px solid #400907;
+  background-color: rgba(255, 255, 255, 0.8);
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.darkred .title a svg {
+  fill: #400907;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.darkred .title a:hover svg {
+  fill: #400907;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.darkred .extra {
+  color: #400907;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.darkred .extra:hover {
+  color: #400907;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }

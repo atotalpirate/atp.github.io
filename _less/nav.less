@@ -6,6 +6,8 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  border-bottom: 2px solid transparent;
+  .transition-duration(@duration: 0.5s);
   a {
   } // a
   .title {
@@ -13,16 +15,17 @@
     margin: 0;
     padding: 0;
     a {
-      object {
-        width: 50px;
-      } // object
       svg {
         width: 6em;
         height: 4em;
-        fill: @navcolor;
+        fill: @navintrocolor;
+        transition-property: fill;
+        .transition-duration(@duration: 0.5s);
       }
       &:hover svg {
-        fill: @navhovercolor;
+        fill: @navintrohovercolor;
+        transition-property: fill;
+        .transition-duration(@duration: 0.5s);
       }
     } //a
   } // title
@@ -30,11 +33,73 @@
     float: right;
     padding: .5em;
     font-size: 2em;
-    color: @navcolor;
+    color: @navintrocolor;
+    .transition-duration(@duration: 0.5s);
     &:hover {
-      color: @navhovercolor;
+      color: @navintrohovercolor;
+      .transition-duration(@duration: 0.5s);
     }
   } // extra
 } // header
 
-.header.shrink {}
+/*
+  Dark blue
+================|
+*/
+
+.dark {
+  border-bottom:2px solid @navbluecolor;
+  background-color: fade(white, 80%);
+  .transition-duration(@duration: 0.5s);
+  .title {
+    a {
+      svg {
+        fill: @navbluecolor;
+        .transition-duration(@duration: 0.5s);
+      }
+      &:hover svg {
+        fill: @navbluehovercolor;
+        .transition-duration(@duration: 0.5s);
+      }
+    } //a
+  } // title
+  .extra {
+    color: @navbluecolor;
+    .transition-duration(@duration: 0.5s);
+    &:hover {
+      color: @navbluehovercolor;
+      .transition-duration(@duration: 0.5s);
+    }// hover
+  } // extra
+}// dark
+
+/*
+  Dark red
+================|
+*/
+
+.darkred {
+  border-bottom:2px solid @navredcolor;
+  background-color: fade(white, 80%);
+  .transition-duration(@duration: 0.5s);
+  .title {
+    a {
+      svg {
+        fill: @navredcolor;
+        .transition-duration(@duration: 0.5s);
+      }
+      &:hover svg {
+        fill: @navredhovercolor;
+        .transition-duration(@duration: 0.5s);
+      }
+    } //a
+  } // title
+  .extra {
+    color: @navredcolor;
+    .transition-duration(@duration: 0.5s);
+    &:hover {
+      color: @navredhovercolor;
+      .transition-duration(@duration: 0.5s);
+    }// hover
+  } // extra
+}// dark

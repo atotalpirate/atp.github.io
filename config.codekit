@@ -53,6 +53,25 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/_less\/footer.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_less\/footer.less",
+		"outputAbbreviatedPath": "\/css\/footer.css",
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/_less\/front.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -176,6 +195,14 @@
 		"outputAbbreviatedPath": "\/_site\/appletouchicon.png",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/_site\/css\/footer.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/css\/footer.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
 		},
 	"\/_site\/css\/front.css": {
 		"fileType": 16,
@@ -3063,6 +3090,14 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/OwlCarousel\/README.md",
 		"outputAbbreviatedPath": "\/bower_components\/OwlCarousel\/README.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/footer.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/footer.css",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
 	"\/css\/front.css": {
