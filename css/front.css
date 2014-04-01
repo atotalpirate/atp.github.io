@@ -45,13 +45,6 @@ font-family: 'Bree Serif', serif;
 #intro #overlay {
   width: 100%;
   height: 100%;
-  background-color: #7b99bb;
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  -webkit-opacity: 0.5;
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
   position: relative;
   z-index: 1;
 }
@@ -71,7 +64,25 @@ font-family: 'Bree Serif', serif;
 #home-carousel .owl-wrapper-outer .owl-wrapper .owl-item {
   height: 100%;
 }
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div {
+#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap {
+  height: 100%;
+}
+#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  color: white;
+  top: 70%;
+  -webkit-transform: translateY(-70%);
+  -moz-transform: translateY(-70%);
+  -o-transform: translateY(-70%);
+  -ms-transform: translateY(-70%);
+  transform: translateY(-70%);
+}
+#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .bgimage {
   height: 100%;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -93,9 +104,9 @@ font-family: 'Bree Serif', serif;
 }
 #home-carousel .owl-controls .owl-pagination {
   position: relative;
-  top: 50%;
   width: 70%;
   margin: 0 15%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
