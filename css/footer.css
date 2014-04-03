@@ -27,6 +27,9 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Bree Serif', serif;
 
 ===========*/
+/*
+Layout variables
+====================*/
 /*---------------------------------------------------
     LESS Elements 0.9
   ---------------------------------------------------
@@ -42,26 +45,26 @@ font-family: 'Bree Serif', serif;
   border-top: 4px solid #400907;
   overflow: hidden;
 }
-.footer .contact {
+.footer .social {
   width: 300px;
   margin: 3em auto;
   height: 90%;
   display: block;
 }
-.footer .contact p {
+.footer .social p {
   font-size: 2em;
 }
-.footer .contact .footeritem {
+.footer .social .footeritem {
   width: 33.3%;
   height: 6em;
   float: left;
 }
-.footer .contact .footeritem a {
+.footer .social .footeritem a {
   width: 60%;
   display: block;
   margin: 0 auto;
 }
-.footer .contact .footeritem a svg {
+.footer .social .footeritem a svg {
   fill: #400907;
 }
 .footer .rss {

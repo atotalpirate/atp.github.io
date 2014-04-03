@@ -8,7 +8,7 @@
   position: relative;
   top: 0;
   right: 0;
-  height: 87%;
+  height: 100%;
   width: 100%;
   #overlay {
     width: 100%;
@@ -33,11 +33,16 @@
           height: 100%;
           .headertext {
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin: 0 auto;
+            height: 0;
             z-index: 10;
             color: white;
-            top: 70%;
-            .transform(translateY(-70%));
+            top: 50%;
+            .transform(translateY(-50%));
+            h1 {
+              font-family: @headerfont;
+            }
             p{
               text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
             }
@@ -62,15 +67,17 @@
     height: 100%;
     .owl-pagination {
       position: relative;
-      width: 70%;
-      margin: 0 15%;
-      top: 50%;
-      .transform(translateY(-50%));
+      width: 80%;
+      max-width: 1000px;
+      margin: 0 auto;
+      top: 20%;
+      .transform(translateY(-20%));
       .owl-page {
-        width: 33.3%;
+        width: 40%;
+        margin: 0 5%;
         span {
           display: block;
-          width: 66%;
+          width: 100%;
           margin: 0 auto;
           height: 0;
           padding-bottom: 67%;
@@ -78,13 +85,10 @@
           .opacity(@opacity: 1);
         }
         &:nth-child(1) > span {
-          background: url('../img/svg/code-icon.svg') no-repeat;
+          background: url('../img/svg/atp-design.svg') no-repeat;
         }
         &:nth-child(2) > span {
-          background: url('../img/svg/design-icon.svg') no-repeat;
-        }
-        &:nth-child(3) > span {
-          background: url('../img/svg/atp.svg') no-repeat;
+          background: url('../img/svg/atp-code.svg') no-repeat;
         }
       } //owl-page
       .active {

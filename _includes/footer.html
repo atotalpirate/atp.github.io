@@ -1,5 +1,5 @@
   <div class="footer">
-    <div class="contact">
+    <div class="social">
       <p>Be Social.</p>
       <div class="footeritem">
         <a target="_blank" href="https://github.com/atotalpirate">{% include github.svg %}</a><br />
@@ -13,7 +13,17 @@
       <div class="footeritem">
         <a target="_blank" href="https://www.behance.net/atotalpirate">{% include behance.svg %}</a><br />
       </div>
-    </div><!--contact-->
+    </div><!--social-->
+    <div class="other">
+
+      <h1>Recent Posts</h1>
+      <ul class="posts">
+        {% for post in site.posts %}
+          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+
+    </div>
   </div><!--footer-->
 </div><!--site-->
 
@@ -65,7 +75,8 @@ $(document).ready(function() {
 
 });
 
-  $("#declaration h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' })
+  $("#declaration h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' });
+  $(".headertext h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' });
 
 </script>
 

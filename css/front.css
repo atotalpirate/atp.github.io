@@ -33,13 +33,16 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Bree Serif', serif;
 
 ===========*/
+/*
+Layout variables
+====================*/
 /* OWL styles
 ===============*/
 #intro {
   position: relative;
   top: 0;
   right: 0;
-  height: 87%;
+  height: 100%;
   width: 100%;
 }
 #intro #overlay {
@@ -69,15 +72,20 @@ font-family: 'Bree Serif', serif;
 }
 #home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext {
   position: relative;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  height: 0;
   z-index: 10;
   color: white;
-  top: 70%;
-  -webkit-transform: translateY(-70%);
-  -moz-transform: translateY(-70%);
-  -o-transform: translateY(-70%);
-  -ms-transform: translateY(-70%);
-  transform: translateY(-70%);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext h1 {
+  font-family: 'Bree Serif', serif;
 }
 #home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -104,21 +112,23 @@ font-family: 'Bree Serif', serif;
 }
 #home-carousel .owl-controls .owl-pagination {
   position: relative;
-  width: 70%;
-  margin: 0 15%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  top: 20%;
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
 }
 #home-carousel .owl-controls .owl-pagination .owl-page {
-  width: 33.3%;
+  width: 40%;
+  margin: 0 5%;
 }
 #home-carousel .owl-controls .owl-pagination .owl-page span {
   display: block;
-  width: 66%;
+  width: 100%;
   margin: 0 auto;
   height: 0;
   padding-bottom: 67%;
@@ -131,13 +141,10 @@ font-family: 'Bree Serif', serif;
   filter: alpha(opacity=100);
 }
 #home-carousel .owl-controls .owl-pagination .owl-page:nth-child(1) > span {
-  background: url('../img/svg/code-icon.svg') no-repeat;
+  background: url('../img/svg/atp-design.svg') no-repeat;
 }
 #home-carousel .owl-controls .owl-pagination .owl-page:nth-child(2) > span {
-  background: url('../img/svg/design-icon.svg') no-repeat;
-}
-#home-carousel .owl-controls .owl-pagination .owl-page:nth-child(3) > span {
-  background: url('../img/svg/atp.svg') no-repeat;
+  background: url('../img/svg/atp-code.svg') no-repeat;
 }
 .work {
   width: 100%;

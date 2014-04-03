@@ -32,31 +32,75 @@ a:hover {
 	color: @blueink;
 	.transition-duration(@duration: 0.5s);
 }
+
+
+
+
+
+// initial variables set-up
 //
-// h1, h2, h3, h4, h5, h6, p, ul, ol, li {
-//   line-height: 1.5;
+// @doc-font-size:16;
+// @doc-line-height:24;
+//
+// // mixin
+//
+// // full-fat vertical rhythm
+// .font-size (@size) {
+//   font-size: 0px + @size;
+//   font-size: 0rem + @size / @doc-font-size;
+//   line-height: 0 + round(@doc-line-height / @size*10000) / 10000;
+//   margin-bottom: 0px + @doc-line-height;
+// 	margin-bottom: 0rem + (@doc-line-height / @doc-font-size);
+// }
+//
+// // just the REMs
+// .font-rem (@size) {
+//   font-size: 0px + @size;
+//   font-size: 0rem + @size / @doc-font-size;
+// }
+//
+// // just font-size and line-height
+// .font (@size) {
+//   font-size: 0px + @size;
+//   font-size: 0rem + @size / @doc-font-size;
+//   line-height: 0 + round(@doc-line-height / @size*10000) / 10000;
+// }
+//
+//
+// // set-up the body font-size / line-height
+// body {
+// 	font-size: 0px + @doc-font-size;
+// }
+//
+// // reseting margin-top on all the things
+//
+// h1, h2, h3, h4, h5, h6, blockquote, iframe, label, p, pre, address, td, th, ul, ol, dl, dd, hr,
+// table, small { margin-top: 0; }
+//
+// // making the page
+//
+// html {
+// 	color: #F2F2F2;
+// 	font-family: Georgia, Times, "Times New Roman", serif;
 // }
 //
 // h1 {
-//   font-size: 4.223rem;
+// 	.font-size(32);
 // }
 //
 // h2 {
-//   font-size: 2.618rem;
-// }
-//
-// h3 {
-//   font-size: 2.61rem;
-// }
-//
-// h4 {
-//   font-size: 1.618rem;
-// }
-//
-// h5 {
-//   font-size: 1.613rem;
+//   .font-rem(20);
 // }
 //
 // h6 {
-//   font-size: 1.613rem;
+//   .font(16);
+// }
+//
+// p {
+//   .font(16);
+// }
+//
+//
+// small {
+//   .font-size(12);
 // }
