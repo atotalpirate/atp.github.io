@@ -22,13 +22,15 @@
 
 
         <!-- Normalizer -->
+
         <link rel="stylesheet" href="/css/normalize.min.css">
 
         <!-- syntax highlighting CSS -->
+
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-
+        <link rel="stylesheet" href="/css/rmm.css" type="text/css"/>
         <link type="text/css" rel="stylesheet" href="/css/main.css">
         <link type="text/css" rel="stylesheet" href="/css/typography.css">
         <link type="text/css" rel="stylesheet" href="/css/nav.css">
@@ -54,5 +56,11 @@
                     {% include atp.svg %}
                 </a>
               </h1>
-                <a class="extra" href="/">homes</a>
+                <div class="rmm" data-menu-style = "minimal">
+                        <ul>
+                            <li><a href='#home'>Home</a></li>
+                            <li><a href='#about-me'>Blog</a></li>
+                            <li><a href='#gallery'>Gallery</a></li>
+                       </ul>
+                </div>
               </div><!--header-->

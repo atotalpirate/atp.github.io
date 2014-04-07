@@ -45,7 +45,8 @@ Layout variables
   border-top: 4px solid #400907;
   overflow: hidden;
 }
-.footer h1 {
+.footer h1,
+.footer .extra {
   font-family: 'Bree Serif', serif;
   font-size: 150%;
 }
@@ -62,20 +63,25 @@ Layout variables
   font-size: 1rem;
   float: left;
 }
-.footer .social .footeritem {
+.footer .social .footeritemwrap {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.footer .social .footeritemwrap .footeritem {
   width: 75px;
   height: 75px;
   float: left;
 }
-.footer .social .footeritem a {
+.footer .social .footeritemwrap .footeritem a {
   width: 50%;
   display: block;
   margin: 0 auto;
 }
-.footer .social .footeritem a svg {
+.footer .social .footeritemwrap .footeritem a svg {
   fill: #400907;
 }
-.footer .social .footeritem::after {
+.footer .social .footeritemwrap .footeritem::after {
   clear: both;
 }
 .footer .other {
@@ -89,6 +95,18 @@ Layout variables
 .footer .other ul {
   list-style-type: none;
   text-align: right;
+}
+.footer .other hr {
+  background-color: #400907;
+  display: block;
+  border: 2px solid;
+}
+.footer .other a.extra {
+  text-align: left;
+  text-transform: uppercase;
+  margin: 1em;
+  color: #faebd7;
+  display: block;
 }
 .footer .rss {
   margin-top: 1.1em;

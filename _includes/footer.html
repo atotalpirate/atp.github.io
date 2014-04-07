@@ -1,38 +1,47 @@
   <div class="footer">
-    <div class="social">
-      <h1>Be Social.</h1>
-      <div class="footeritem">
-        <a target="_blank" href="https://github.com/atotalpirate">{% include github.svg %}</a><br />
-      </div>
-      <div class="footeritem">
-        <a target="_blank" href="https://twitter.com/atotalpirate">{% include twitter.svg %}</a><br />
-      </div>
-      <div class="footeritem">
-        <a target="_blank" href="https://www.instagram.com/atotalpirate">{% include instagram.svg %}</a><br />
-      </div>
-      <div class="footeritem">
-        <a target="_blank" href="https://www.behance.net/atotalpirate">{% include behance.svg %}</a><br />
-      </div>
+    <div class="container">
+      <div class="social">
+        <h1>Be Social.</h1>
+
+          <div class="footeritemwrap">
+            <div class="footeritem">
+              <a target="_blank" href="https://github.com/atotalpirate">{% include github.svg %}</a><br />
+            </div>
+            <div class="footeritem">
+              <a target="_blank" href="https://twitter.com/atotalpirate">{% include twitter.svg %}</a><br />
+            </div>
+            <div class="footeritem">
+              <a target="_blank" href="https://www.instagram.com/atotalpirate">{% include instagram.svg %}</a><br />
+            </div>
+            <div class="footeritem">
+              <a target="_blank" href="https://www.behance.net/atotalpirate">{% include behance.svg %}</a><br />
+            </div>
+          </div>
+
 
       <p>My various corners of the Internet.</p>
 
-    </div><!--social-->
-    <div class="other">
+      </div><!--social-->
+      <div class="other">
 
-      <h1>Recent Posts</h1>
-      <ul class="posts">
-        {% for post in site.posts %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a><br /><span>{{ post.date | date_to_string }}</span></li>
-        {% endfor %}
-      </ul>
-
+        <h1>Recent Posts</h1>
+        <ul class="posts">
+          {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a><br /><span>{{ post.date | date_to_string }}</span></li>
+          {% endfor %}
+        </ul>
+        <hr />
+        <a class="extra" href="/">home</a>
+        <a class="extra" href="/">blog</a>
+        <a class="extra" href="/">contact</a>
+      </div>
     </div>
   </div><!--footer-->
 </div><!--site-->
 
 
 <script src="/js/jquery.min.js"></script>
-
+<script type="text/javascript" src="/js/responsivemobilemenu.js"></script>
 
 {% if page.title == 'Home' %}
 

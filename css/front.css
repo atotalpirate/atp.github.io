@@ -82,6 +82,7 @@ Layout variables
   font-family: 'Bree Serif', serif;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   margin: 0;
+  padding: 1em;
 }
 #home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -233,33 +234,44 @@ Layout variables
   filter: alpha(opacity=90);
 }
 #declaration {
-  padding: 20% 0;
+  height: 100%;
 }
-#declaration h1 {
+#declaration .container {
+  position: relative;
+  margin: 0 auto;
+  height: 0;
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+  -moz-transform: translateY(-30%);
+  -o-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
+}
+#declaration .container h1 {
   line-height: 1;
   color: #354d68;
   font-family: 'Bree Serif', serif;
   margin-top: 0;
 }
-#declaration p {
+#declaration .container p {
   width: 60%;
   margin: 0 auto;
   font-size: 115%;
 }
 @media screen and (min-width: 1000px) {
-  #declaration p {
+  #declaration .container p {
     width: 50%;
     margin: 0 25%;
   }
 }
 @media screen and (max-width: 1000px) {
-  #declaration p {
+  #declaration .container p {
     width: 80%;
     margin: 0 10%;
   }
 }
 @media screen and (max-width: 500px) {
-  #declaration p {
+  #declaration .container p {
     width: 90%;
     margin: 0 5%;
   }

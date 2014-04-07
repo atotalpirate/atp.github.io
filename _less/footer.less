@@ -1,6 +1,8 @@
 @import "variables";
 @import "elements";
 
+@footerlinkcolor: rgba(250, 235, 215, 1);
+
 .footer {
   height: 20em;
   width: 100%;
@@ -9,7 +11,7 @@
   color: @darkredink;
   border-top: 4px solid @darkredink;
   overflow: hidden;
-  h1 {
+  h1, .extra {
     font-family: @headerfont;
     font-size: 150%;
   }
@@ -25,35 +27,52 @@
       font-size: 1rem;
       float: left;
     }
-    .footeritem {
-      width: 75px;
-      height: 75px;
-      float: left;
-      a {
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-        svg {
-          fill: @darkredink;
-        }// svg
-      }// a
-      &::after {
-        clear: both;
-      }
-    }//.footeritem
+    .footeritemwrap {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      .footeritem {
+        width: 75px;
+        height: 75px;
+        float: left;
+        a {
+          width: 50%;
+          display: block;
+          margin: 0 auto;
+          svg {
+            fill: @darkredink;
+          }// svg
+        }// a
+        &::after {
+          clear: both;
+        }
+      }//.footeritem
+    }// footeritemwrap
   }// .social
   .other {
     width:38.47%;
     float: left;
     margin: 0.5% 1%;
-    h1 {
-      text-align: right;
-    }
-    ul {
-      list-style-type: none;
-      text-align: right;
-    }
-  }
+      h1 {
+        text-align: right;
+      }
+      ul {
+        list-style-type: none;
+        text-align: right;
+      }
+      hr {
+        background-color: @darkredink;
+        display: block;
+        border: 2px solid;
+      }
+      a.extra {
+        text-align: left;
+        text-transform: uppercase;
+        margin: 1em;
+        color: @footerlinkcolor;
+        display:block;
+      }
+  }// other
   .rss {
     margin-top: 1.1em;
     margin-right: -.2em;

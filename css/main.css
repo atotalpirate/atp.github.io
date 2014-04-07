@@ -1,3 +1,41 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Widths of stuffs
+===========*/
+/* COLORS
+===========*/
+/* rename this to blueink */
+/* COLOR ASSIGNMENTS
+===========*/
+/* PHANTS
+
+font-family: 'Overlock SC', cursive;
+font-family: 'Nova Slim', cursive;
+font-family: 'PT Mono', ;
+font-family: 'Offside', cursive;
+font-family: 'Rationale', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Unica One', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Baumans', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Nova Cut', cursive;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Homenaje', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Bree Serif', serif;
+
+===========*/
+/*
+Layout variables
+====================*/
 /*****************************************************************************/
 /*
 /* Common
@@ -20,6 +58,10 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 h1,
 h2,

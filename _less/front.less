@@ -4,28 +4,35 @@
 
 
 #declaration {
-  padding: 20% 0;
-  h1 {
-    line-height: 1;
-    color: @darkblueink;
-    font-family: @headerfont;
-    margin-top: 0;
-  }
-  p {
-    width: 60%;
+  height: 100%;
+  .container {
+    position: relative;
     margin: 0 auto;
-    font-size: 115%;
-    @media screen and (min-width: 1000px){
-      width: @wlarge;
-      margin: 0 @smlarge;
+    height: 0;
+    top: 30%;
+    .transform(translateY(-30%));
+    h1 {
+      line-height: 1;
+      color: @darkblueink;
+      font-family: @headerfont;
+      margin-top: 0;
     }
-    @media screen and (max-width: 1000px){
-      width: @w;
-      margin: 0 @sm;
-    }
-    @media screen and (max-width: 500px){
-      width: @wsmall;
-      margin: 0 @smsmall;
-    }
-  }
-}
+    p {
+      width: 60%;
+      margin: 0 auto;
+      font-size: 115%;
+      @media screen and (min-width: 1000px){
+        width: @wlarge;
+        margin: 0 @smlarge;
+      }
+      @media screen and (max-width: 1000px){
+        width: @w;
+        margin: 0 @sm;
+      }
+      @media screen and (max-width: 500px){
+        width: @wsmall;
+        margin: 0 @smsmall;
+      }
+    }// p
+  }// container
+}// declaration
