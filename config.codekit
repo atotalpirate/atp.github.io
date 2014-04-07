@@ -286,13 +286,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/img\/food.jpg": {
+	"\/_site\/img\/food.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 807638,
-		"inputAbbreviatedPath": "\/_site\/img\/food.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/food.jpg",
+		"inputAbbreviatedPath": "\/_site\/img\/food.JPG",
+		"outputAbbreviatedPath": "\/_site\/img\/food.JPG",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -3212,13 +3212,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/food.jpg": {
+	"\/img\/food.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 807638,
-		"inputAbbreviatedPath": "\/img\/food.jpg",
-		"outputAbbreviatedPath": "\/img\/food.jpg",
+		"initialSize": 63932,
+		"inputAbbreviatedPath": "\/img\/food.JPG",
+		"outputAbbreviatedPath": "\/img\/food.JPG",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},

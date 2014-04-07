@@ -45,27 +45,50 @@ Layout variables
   border-top: 4px solid #400907;
   overflow: hidden;
 }
+.footer h1 {
+  font-family: 'Bree Serif', serif;
+  font-size: 150%;
+}
 .footer .social {
-  width: 300px;
-  margin: 3em auto;
-  height: 90%;
+  width: 57.52%;
+  margin: 0.5% 1%;
+  float: left;
   display: block;
 }
+.footer .social h1 {
+  text-align: left;
+}
 .footer .social p {
-  font-size: 2em;
+  font-size: 1rem;
+  float: left;
 }
 .footer .social .footeritem {
-  width: 33.3%;
-  height: 6em;
+  width: 75px;
+  height: 75px;
   float: left;
 }
 .footer .social .footeritem a {
-  width: 60%;
+  width: 50%;
   display: block;
   margin: 0 auto;
 }
 .footer .social .footeritem a svg {
   fill: #400907;
+}
+.footer .social .footeritem::after {
+  clear: both;
+}
+.footer .other {
+  width: 38.47%;
+  float: left;
+  margin: 0.5% 1%;
+}
+.footer .other h1 {
+  text-align: right;
+}
+.footer .other ul {
+  list-style-type: none;
+  text-align: right;
 }
 .footer .rss {
   margin-top: 1.1em;

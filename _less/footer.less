@@ -9,28 +9,51 @@
   color: @darkredink;
   border-top: 4px solid @darkredink;
   overflow: hidden;
+  h1 {
+    font-family: @headerfont;
+    font-size: 150%;
+  }
   .social {
-    width: 300px;
-    margin: 3em auto;
-    height: 90%;
+    width: 57.52%;
+    margin: 0.5% 1%;
+    float: left;
     display: block;
+    h1 {
+      text-align: left;
+    }
     p {
-      font-size: 2em;
+      font-size: 1rem;
+      float: left;
     }
     .footeritem {
-      width: 33.3%;
-      height: 6em;
+      width: 75px;
+      height: 75px;
       float: left;
       a {
-        width: 60%;
+        width: 50%;
         display: block;
         margin: 0 auto;
         svg {
           fill: @darkredink;
         }// svg
       }// a
+      &::after {
+        clear: both;
+      }
     }//.footeritem
-  }// .contact
+  }// .social
+  .other {
+    width:38.47%;
+    float: left;
+    margin: 0.5% 1%;
+    h1 {
+      text-align: right;
+    }
+    ul {
+      list-style-type: none;
+      text-align: right;
+    }
+  }
   .rss {
     margin-top: 1.1em;
     margin-right: -.2em;
