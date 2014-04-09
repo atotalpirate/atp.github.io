@@ -30,11 +30,10 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/rmm.css" type="text/css"/>
-        <link type="text/css" rel="stylesheet" href="/css/main.css">
-        <link type="text/css" rel="stylesheet" href="/css/typography.css">
-        <link type="text/css" rel="stylesheet" href="/css/nav.css">
-        <link type="text/css" rel="stylesheet" href="/css/footer.css">
+        <link type="text/css" rel="stylesheet" href="/css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="/css/typography.css"/>
+        <link type="text/css" rel="stylesheet" href="/css/nav.css"/>
+        <link type="text/css" rel="stylesheet" href="/css/footer.css"/>
 
         {% if page.title == 'Home' %}
 
@@ -50,17 +49,17 @@
 
             <div class="site">
 
-              <div class="header">
+              <div id="desktopmenuwrap" class="header">
                 <h1 class="title">
                   <a href="/">
                     {% include atp.svg %}
                 </a>
               </h1>
-                <div class="rmm" data-menu-style = "minimal">
-                        <ul>
-                            <li><a href='#home'>Home</a></li>
-                            <li><a href='#about-me'>Blog</a></li>
-                            <li><a href='#gallery'>Gallery</a></li>
-                       </ul>
+                <div id="menu" class="desktopnav">
+                    <ul>
+                        <li><a href='#home'>home</a></li>
+                        <li><a href='#about-me'>blog</a></li>
+                        <li><a href='#gallery'>gallery</a></li>
+                   </ul>
                 </div>
               </div><!--header-->

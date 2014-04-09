@@ -1,0 +1,1 @@
+var $ul=$("<ul></ul>");$ul.addClass("smallnav").hide(),$("#menu a").each(function(){var a=$(this),e=$("<li></li>"),l=$("<a></a>");l.attr("href",a.attr("href")).text(a.text()),e.append(l),$ul.append(e)}),$(".header").append($ul);

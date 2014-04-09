@@ -39,10 +39,8 @@
   </div><!--footer-->
 </div><!--site-->
 
-
-<script src="/js/jquery.min.js"></script>
-<script type="text/javascript" src="/js/responsivemobilemenu.js"></script>
-
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/js/jquery.menu.js"></script>
 {% if page.title == 'Home' %}
 
 <script src="/js/owl.carousel.min.js"></script>
@@ -95,5 +93,9 @@ $(document).ready(function() {
 {% endif %}
 
 <script src="/js/atp.js"></script>
+<script src="/js/jquery.dlmenu.js"></script>
+<script>
+    $( '#dl-menu' ).dlmenu();
+</script>
 </body>
 </html>
