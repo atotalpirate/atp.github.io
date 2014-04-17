@@ -15,40 +15,44 @@
     font-family: @headerfont;
     font-size: 150%;
   }
-  .social {
-    width: 57.52%;
-    margin: 0.5% 1%;
-    float: left;
-    display: block;
-    h1 {
-      text-align: left;
-    }
-    p {
-      font-size: 1rem;
+  .container {
+    position: relative;
+    top: 20%;
+    .transform(translateY(-20%));
+    .social {
+      width: 57.52%;
+      margin: 0.5% 1%;
       float: left;
-    }
-    .footeritemwrap {
-      display: inline-block;
-      width: 100%;
-      position: relative;
-      .footeritem {
-        width: 75px;
-        height: 75px;
+      display: block;
+      h1 {
+        text-align: left;
+      }
+      p {
+        font-size: 1rem;
         float: left;
-        a {
-          width: 50%;
-          display: block;
-          margin: 0 auto;
-          svg {
-            fill: @darkredink;
-          }// svg
-        }// a
-        &::after {
-          clear: both;
-        }
-      }//.footeritem
-    }// footeritemwrap
-  }// .social
+      }
+      .footeritemwrap {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        .footeritem {
+          width: 75px;
+          height: 75px;
+          float: left;
+          a {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            svg {
+              fill: @darkredink;
+            }// svg
+          }// a
+          &::after {
+            clear: both;
+          }
+        }//.footeritem
+      }// footeritemwrap
+    }// .social
   .other {
     width:38.47%;
     float: left;
@@ -66,13 +70,20 @@
         border: 2px solid;
       }
       a.extra {
-        text-align: left;
+        text-align: right;
         text-transform: uppercase;
         margin: 1em;
-        color: @footerlinkcolor;
+        color: @darkredink;
         display:block;
       }
   }// other
+}// container
+  p.colophon {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 68%;
+  }
   .rss {
     margin-top: 1.1em;
     margin-right: -.2em;

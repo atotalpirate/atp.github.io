@@ -224,6 +224,14 @@
 		"outputAbbreviatedPath": "\/_posts\/2014-04-08-syntax-highlighting.html",
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/about\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/about\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/appletouchicon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -324,13 +332,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/img\/food.JPG": {
+	"\/_site\/img\/food.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 807638,
-		"inputAbbreviatedPath": "\/_site\/img\/food.JPG",
-		"outputAbbreviatedPath": "\/_site\/img\/food.JPG",
+		"inputAbbreviatedPath": "\/_site\/img\/food.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/food.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -441,6 +449,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/README.md",
 		"outputAbbreviatedPath": "\/_site\/README.html",
+		"outputPathIsSetByUser": 0
+		},
+	"\/about\/_site\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about\/_site\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/about\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/about\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
 	"\/appletouchicon.png": {
@@ -3288,13 +3312,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/food.JPG": {
+	"\/img\/food.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 807638,
-		"inputAbbreviatedPath": "\/img\/food.JPG",
-		"outputAbbreviatedPath": "\/img\/food.JPG",
+		"inputAbbreviatedPath": "\/img\/food.jpg",
+		"outputAbbreviatedPath": "\/img\/food.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},

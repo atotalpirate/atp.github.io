@@ -24,18 +24,13 @@
       </div><!--social-->
       <div class="other">
 
-        <h1>Recent Posts</h1>
-        <ul class="posts">
-          {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a><br /><span>{{ post.date | date_to_string }}</span></li>
-          {% endfor %}
-        </ul>
-        <hr />
-        <a class="extra" href="/">home</a>
+        <a class="extra" href="/">Back to top</a>
         <a class="extra" href="/">blog</a>
         <a class="extra" href="/">contact</a>
+
       </div>
     </div>
+    <p class="colophon">Copyright &copy; {{ site.time | date: "%Y" }} Jimmy Holway</p>
   </div><!--footer-->
 </div><!--site-->
 
