@@ -96,6 +96,7 @@ Layout variables
   font-weight: bold;
 }
 .dark {
+  background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 2px solid #354d68;
   -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
