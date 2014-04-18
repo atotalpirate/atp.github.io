@@ -332,13 +332,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/img\/food.jpg": {
+	"\/_site\/img\/food.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 807638,
-		"inputAbbreviatedPath": "\/_site\/img\/food.jpg",
-		"outputAbbreviatedPath": "\/_site\/img\/food.jpg",
+		"inputAbbreviatedPath": "\/_site\/img\/food.JPG",
+		"outputAbbreviatedPath": "\/_site\/img\/food.JPG",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},

@@ -44,73 +44,71 @@
           list-style-type: none;
           padding: 1em;
           font-size: 1em;
+          font-weight: bold;
       }
     }
   }
-} // header
+}
+// header
 
 // /*
 //   Dark blue
 // ================|
 // */
-//
-// .dark {
-//   border-bottom:2px solid @navbluecolor;
-//   background-color: fade(white, 80%);
-//   .transition-duration(@duration: 0.5s);
-//   .title {
-//     a {
-//       svg {
-//         fill: @navbluecolor;
-//         .transition-duration(@duration: 0.5s);
-//       }
-//       &:hover svg {
-//         fill: @navbluehovercolor;
-//         .transition-duration(@duration: 0.5s);
-//       }
-//     } //a
-//   } // title
-//   .extra {
-//     color: @navbluecolor;
-//     .transition-duration(@duration: 0.5s);
-//     &:hover {
-//       color: @navbluehovercolor;
-//       .transition-duration(@duration: 0.5s);
-//     }// hover
-//   } // extra
-// }// dark
-//
+
+.dark {
+  border-bottom: 2px solid @darkblueink;
+  .transition-duration(@duration: 0.5s);
+  a {
+    color: @darkblueink;
+    .transition-duration(@duration: 0.5s);
+    &:hover {
+      color: @blueink;
+      .transition-duration(@duration: 0.5s);
+    }
+  } // a
+  .title {
+    float: left;
+    margin: 0;
+    font-size: 1em;
+    padding: 0;
+    a {
+      svg {
+        width: 6em;
+        height: 4em;
+        fill: @darkblueink;
+        transition-property: fill;
+        .transition-duration(@duration: 0.5s);
+      }
+      &:hover svg {
+        fill: @blueink;
+        transition-property: fill;
+        .transition-duration(@duration: 0.5s);
+      }
+    } //a
+  } // title
+  #menu {
+    ul {
+      margin: 0;
+      li {
+          float: right;
+          list-style-type: none;
+          padding: 1em;
+          font-size: 1em;
+      }
+    }
+  }
+}// dark
+
 // /*
 //   Dark red
 // ================|
 // */
-//
-// .darkred {
-//   border-bottom:2px solid @navredcolor;
-//   background-color: fade(white, 80%);
-//   .transition-duration(@duration: 0.5s);
-//   .title {
-//     a {
-//       svg {
-//         fill: @navredcolor;
-//         .transition-duration(@duration: 0.5s);
-//       }
-//       &:hover svg {
-//         fill: @navredhovercolor;
-//         .transition-duration(@duration: 0.5s);
-//       }
-//     } //a
-//   } // title
-//   .extra {
-//     color: @navredcolor;
-//     .transition-duration(@duration: 0.5s);
-//     &:hover {
-//       color: @navredhovercolor;
-//       .transition-duration(@duration: 0.5s);
-//     }// hover
-//   } // extra
-// }// dark
-//
+
+.darkred {
+
+}// dark
+
 // //Mobile nav: hiding desktop nav and showing mobile
 // #menu{
 //
