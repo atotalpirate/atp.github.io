@@ -45,6 +45,11 @@ Layout variables
   border-top: 4px solid #400907;
   overflow: hidden;
 }
+@media only screen and (max-width: 500px) {
+  .footer {
+    font-size: 80%;
+  }
+}
 .footer h1,
 .footer .extra {
   font-family: 'Bree Serif', serif;
@@ -81,6 +86,12 @@ Layout variables
   width: 75px;
   height: 75px;
   float: left;
+}
+@media only screen and (max-width: 500px) {
+  .footer .container .social .footeritemwrap .footeritem {
+    width: 50px;
+    height: 50px;
+  }
 }
 .footer .container .social .footeritemwrap .footeritem a {
   width: 50%;

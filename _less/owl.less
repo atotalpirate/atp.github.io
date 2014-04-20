@@ -71,12 +71,19 @@
         margin: 0 5%;
         span {
           display: block;
-          width: 100%;
-          margin: 0 auto;
+          width:80%;
+          margin:0 10%;
           height: 0;
           padding-bottom: 67%;
           background-repeat: no-repeat;
-          .opacity(@opacity: 1);
+          .greyscale(@x: 1);
+          .opacity(@opacity: 0.8);
+          .transition-duration(@duration: 0.5s);
+          &:hover {
+            .opacity(@opacity: 1);
+            .greyscale(@x: 0);
+            .transition-duration(@duration: 0.5s);
+          }
         }
         &:nth-child(1) > span {
           background: url('../img/svg/atp-design.svg') no-repeat;
@@ -87,7 +94,11 @@
       } //owl-page
       .active {
         span {
-
+          width: 100%;
+          margin: 0 auto;
+          .opacity(@opacity: 1);
+          .greyscale(@x: 0);
+          .transition-duration(@duration: 0.5s);
         } //span
       } //active
     } //owl-pagination
