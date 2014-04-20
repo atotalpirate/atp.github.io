@@ -50,63 +50,78 @@ Layout variables
   font-family: 'Bree Serif', serif;
   font-size: 150%;
 }
-.footer .social {
+.footer .container {
+  position: relative;
+  top: 20%;
+  -webkit-transform: translateY(-20%);
+  -moz-transform: translateY(-20%);
+  -o-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
+}
+.footer .container .social {
   width: 57.52%;
   margin: 0.5% 1%;
   float: left;
   display: block;
 }
-.footer .social h1 {
+.footer .container .social h1 {
   text-align: left;
 }
-.footer .social p {
+.footer .container .social p {
   font-size: 1rem;
   float: left;
 }
-.footer .social .footeritemwrap {
+.footer .container .social .footeritemwrap {
   display: inline-block;
   width: 100%;
   position: relative;
 }
-.footer .social .footeritemwrap .footeritem {
+.footer .container .social .footeritemwrap .footeritem {
   width: 75px;
   height: 75px;
   float: left;
 }
-.footer .social .footeritemwrap .footeritem a {
+.footer .container .social .footeritemwrap .footeritem a {
   width: 50%;
   display: block;
   margin: 0 auto;
 }
-.footer .social .footeritemwrap .footeritem a svg {
+.footer .container .social .footeritemwrap .footeritem a svg {
   fill: #400907;
 }
-.footer .social .footeritemwrap .footeritem::after {
+.footer .container .social .footeritemwrap .footeritem::after {
   clear: both;
 }
-.footer .other {
+.footer .container .other {
   width: 38.47%;
   float: left;
   margin: 0.5% 1%;
 }
-.footer .other h1 {
+.footer .container .other h1 {
   text-align: right;
 }
-.footer .other ul {
+.footer .container .other ul {
   list-style-type: none;
   text-align: right;
 }
-.footer .other hr {
+.footer .container .other hr {
   background-color: #400907;
   display: block;
   border: 2px solid;
 }
-.footer .other a.extra {
-  text-align: left;
+.footer .container .other a.extra {
+  text-align: right;
   text-transform: uppercase;
   margin: 1em;
-  color: #faebd7;
+  color: #400907;
   display: block;
+}
+.footer p.colophon {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 68%;
 }
 .footer .rss {
   margin-top: 1.1em;

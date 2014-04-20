@@ -94,8 +94,6 @@ Layout variables
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: url(filters.svg#grayscale);
-  /* Firefox 4+ */
   filter: gray;
   /* IE 6-9 */
 }
@@ -175,8 +173,6 @@ Layout variables
   -ms-filter: grayscale(1);
   -o-filter: grayscale(1);
   filter: grayscale(1);
-  filter: url(filters.svg#grayscale);
-  /* Firefox 4+ */
   filter: gray;
   /* IE 6-9 */
 }

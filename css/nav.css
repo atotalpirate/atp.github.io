@@ -93,4 +93,60 @@ Layout variables
   list-style-type: none;
   padding: 1em;
   font-size: 1em;
+  font-weight: bold;
+}
+.dark {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 2px solid #354d68;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark a {
+  color: #354d68;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark a:hover {
+  color: #7b99bb;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark .title {
+  float: left;
+  margin: 0;
+  font-size: 1em;
+  padding: 0;
+}
+.dark .title a svg {
+  width: 6em;
+  height: 4em;
+  fill: #354d68;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark .title a:hover svg {
+  fill: #7b99bb;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.dark #menu ul {
+  margin: 0;
+}
+.dark #menu ul li {
+  float: right;
+  list-style-type: none;
+  padding: 1em;
+  font-size: 1em;
 }

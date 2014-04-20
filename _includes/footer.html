@@ -24,23 +24,19 @@
       </div><!--social-->
       <div class="other">
 
-        <h1>Recent Posts</h1>
-        <ul class="posts">
-          {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a><br /><span>{{ post.date | date_to_string }}</span></li>
-          {% endfor %}
-        </ul>
-        <hr />
-        <a class="extra" href="/">home</a>
+        <a class="extra" href="/">Back to top</a>
         <a class="extra" href="/">blog</a>
         <a class="extra" href="/">contact</a>
+
       </div>
     </div>
+    <p class="colophon">Copyright &copy; {{ site.time | date: "%Y" }} Jimmy Holway</p>
   </div><!--footer-->
 </div><!--site-->
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="/js/jquery.menu.js"></script>
+
 {% if page.title == 'Home' %}
 
 <script src="/js/owl.carousel.min.js"></script>
@@ -81,6 +77,46 @@ $(document).ready(function() {
       // itemsMobile : false
 
   });
+  
+  // Header style change on scroll
+
+  // var vh = $(window).height();
+    var intro = $("#intro").height();
+    var declaration = $("#declaration").height();
+
+    $(function(){
+     var changeHeader = intro - 20;
+      $(window).scroll(function() {
+        var scroll = getCurrentScroll();
+          if ( scroll >= changeHeader ) {
+               $('.header').addClass('dark');
+            }
+            else {
+                $('.header').removeClass('dark');
+            }
+      });
+    function getCurrentScroll() {
+        return window.pageYOffset;
+        }
+    });
+
+    $(function(){
+     var changeHeaderAgain = intro + declaration;
+      $(window).scroll(function() {
+        var scroll = getCurrentScroll();
+          if ( scroll >= changeHeaderAgain ) {
+               $('.header').removeClass('dark');
+               $('.header').addClass('darkred');
+            }
+            else {
+                $('.header').removeClass('darkred');
+            }
+      });
+    function getCurrentScroll() {
+        return window.pageYOffset;
+        }
+    });
+
 
 
 });
@@ -92,7 +128,6 @@ $(document).ready(function() {
 
 {% endif %}
 
-<script src="/js/atp.js"></script>
 <script src="/js/jquery.dlmenu.js"></script>
 <script>
     $( '#dl-menu' ).dlmenu();
