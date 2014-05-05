@@ -11,7 +11,7 @@
   color: @darkredink;
   border-top: 4px solid @darkredink;
   overflow: hidden;
-  @media only screen and (max-width : 500px) { font-size: 80%; }
+  @media only screen and (max-width : 500px) { font-size: 60%; }
   h1, .extra {
     font-family: @headerfont;
     font-size: 150%;
@@ -80,6 +80,21 @@
         margin: 1em;
         color: @darkredink;
         display:block;
+      }
+      .contact {
+        background-color: @darkredink !important;
+        padding: 1rem;
+        color: @redink !important;
+        border: 5px solid @darkredink;
+        .rounded(6px);
+        width: 50%;
+        text-align: center !important;
+        float: right;
+        margin: 0 1em 0 0 !important;
+        &:hover {
+          background-color: @redink !important;
+          color: @darkredink !important;
+        }
       }
   }// other
 }// container

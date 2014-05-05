@@ -47,7 +47,7 @@ Layout variables
 }
 @media only screen and (max-width: 500px) {
   .footer {
-    font-size: 80%;
+    font-size: 60%;
   }
 }
 .footer h1,
@@ -127,6 +127,23 @@ Layout variables
   margin: 1em;
   color: #400907;
   display: block;
+}
+.footer .container .other .contact {
+  background-color: #400907 !important;
+  padding: 1rem;
+  color: #85120f !important;
+  border: 5px solid #400907;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  width: 50%;
+  text-align: center !important;
+  float: right;
+  margin: 0 1em 0 0 !important;
+}
+.footer .container .other .contact:hover {
+  background-color: #85120f !important;
+  color: #400907 !important;
 }
 .footer p.colophon {
   position: absolute;

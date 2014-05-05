@@ -85,7 +85,7 @@ Layout variables
   height: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(123, 153, 187, 0.3);
+  background-color: rgba(123, 153, 187, 0.8);
 }
 #home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .bgimage {
   height: 100%;
@@ -135,12 +135,12 @@ Layout variables
   filter: grayscale(1);
   filter: gray;
   /* IE 6-9 */
-  -moz-opacity: 0.8;
-  -khtml-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-  filter: alpha(opacity=80);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  -webkit-opacity: 0.4;
+  opacity: 0.4;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+  filter: alpha(opacity=40);
   -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -174,6 +174,8 @@ Layout variables
 #home-carousel .owl-controls .owl-pagination .active span {
   width: 100%;
   margin: 0 auto;
+  position: relative;
+  top: -1em;
   -moz-opacity: 1;
   -khtml-opacity: 1;
   -webkit-opacity: 1;
@@ -281,47 +283,65 @@ Layout variables
   min-height: 1000px;
   width: 100%;
 }
-#declaration {
+#middle {
   height: 100%;
   min-height: 1000px;
 }
-#declaration .container {
+#middle .declaration {
   position: relative;
   margin: 0 auto;
-  height: 0;
-  top: 30%;
-  -webkit-transform: translateY(-30%);
-  -moz-transform: translateY(-30%);
-  -o-transform: translateY(-30%);
-  -ms-transform: translateY(-30%);
-  transform: translateY(-30%);
+  height: 40%;
 }
-#declaration .container h1 {
+#middle .declaration .textwrap {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#middle .declaration .textwrap h1 {
   line-height: 1;
   color: #354d68;
   font-family: 'Bree Serif', serif;
   margin-top: 0;
 }
-#declaration .container p {
+#middle .declaration .textwrap p {
   width: 60%;
   margin: 0 auto;
   font-size: 115%;
 }
 @media screen and (min-width: 1000px) {
-  #declaration .container p {
+  #middle .declaration .textwrap p {
     width: 50%;
     margin: 0 25%;
   }
 }
 @media screen and (max-width: 1000px) {
-  #declaration .container p {
+  #middle .declaration .textwrap p {
     width: 80%;
     margin: 0 10%;
   }
 }
 @media screen and (max-width: 500px) {
-  #declaration .container p {
+  #middle .declaration .textwrap p {
     width: 90%;
     margin: 0 5%;
   }
+}
+#middle .trio {
+  height: 60%;
+}
+#middle .trio .trioitem {
+  position: relative;
+  top: 0%;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  float: left;
+  width: 33.3%;
+  height: 33%;
 }

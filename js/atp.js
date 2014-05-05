@@ -22,21 +22,5 @@ $(document).ready(function(){
       }
   });
 
-  $(function(){
-   var changeHeaderAgain = intro + declaration;
-    $(window).scroll(function() {
-      var scroll = getCurrentScroll();
-        if ( scroll >= changeHeaderAgain ) {
-             $('.header').removeClass('dark');
-             $('.header').addClass('darkred');
-          }
-          else {
-              $('.header').removeClass('darkred');
-          }
-    });
-  function getCurrentScroll() {
-      return window.pageYOffset;
-      }
-  });
 
 });

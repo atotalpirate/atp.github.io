@@ -15,37 +15,51 @@
   }// overlay
 }// intro
 
-#declaration {
+#middle {
   height: 100%;
   min-height:1000px;
-  .container {
+  .declaration {
     position: relative;
     margin: 0 auto;
-    height: 0;
-    top: 30%;
-    .transform(translateY(-30%));
-    h1 {
-      line-height: 1;
-      color: @darkblueink;
-      font-family: @headerfont;
-      margin-top: 0;
+    height: 40%;
+      .textwrap {
+        position: relative;
+        top: 50%;
+        .transform(translateY(-50%));
+      h1 {
+        line-height: 1;
+        color: @darkblueink;
+        font-family: @headerfont;
+        margin-top: 0;
+      }
+      p {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 115%;
+        @media screen and (min-width: 1000px){
+          width: @wlarge;
+          margin: 0 @smlarge;
+        }
+        @media screen and (max-width: 1000px){
+          width: @w;
+          margin: 0 @sm;
+        }
+        @media screen and (max-width: 500px){
+          width: @wsmall;
+          margin: 0 @smsmall;
+        }
+      }// p
+    }// textwrap
+  }// declaration
+  .trio {
+    height: 60%;
+    .trioitem {
+      position: relative;
+      top: 0%;
+      .transform(translateY(-0%));
+      float: left;
+      width: 33.3%;
+      height: 33%;
     }
-    p {
-      width: 60%;
-      margin: 0 auto;
-      font-size: 115%;
-      @media screen and (min-width: 1000px){
-        width: @wlarge;
-        margin: 0 @smlarge;
-      }
-      @media screen and (max-width: 1000px){
-        width: @w;
-        margin: 0 @sm;
-      }
-      @media screen and (max-width: 500px){
-        width: @wsmall;
-        margin: 0 @smsmall;
-      }
-    }// p
-  }// container
-}// declaration
+  }
+}// middle

@@ -23,7 +23,7 @@
 
         <a class="extra" href="/">Back to top</a>
         <a class="extra" href="/">blog</a>
-        <a class="extra" href="/">contact</a>
+        <a class="extra contact" href="/">contact</a>
 
       </div>
     </div>
@@ -97,28 +97,12 @@ $(document).ready(function() {
         }
     });
 
-    $(function(){
-     var changeHeaderAgain = intro + declaration;
-      $(window).scroll(function() {
-        var scroll = getCurrentScroll();
-          if ( scroll >= changeHeaderAgain ) {
-               $('.header').removeClass('dark');
-               $('.header').addClass('darkred');
-            }
-            else {
-                $('.header').removeClass('darkred');
-            }
-      });
-    function getCurrentScroll() {
-        return window.pageYOffset;
-        }
-    });
-
+    
 
 
 });
 
-  $("#declaration h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' });
+  $("#middle h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' });
   $(".headertext h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' });
 
 </script>
