@@ -63,3 +63,31 @@
     }
   }
 }// middle
+    height: 0;
+    top: 30%;
+    .transform(translateY(-30%));
+    h1 {
+      line-height: 1;
+      color: @darkblueink;
+      font-family: @headerfont;
+      margin-top: 0;
+    }
+    p {
+      width: 60%;
+      margin: 0 auto 1.5em;
+      font-size: 115%;
+      @media screen and (min-width: 1000px){
+        width: @wlarge;
+        margin: 0 @smlarge 1.5em;
+      }
+      @media screen and (max-width: 1000px){
+        width: @w;
+        margin: 0 @sm 1.5em;
+      }
+      @media screen and (max-width: 500px){
+        width: @wsmall;
+        margin: 0 @smsmall 1.5em;
+      }
+    }// p
+  }// container
+}// declaration

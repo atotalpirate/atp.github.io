@@ -309,25 +309,25 @@ Layout variables
 }
 #middle .declaration .textwrap p {
   width: 60%;
-  margin: 0 auto;
+  margin: 0 auto 1.5em;
   font-size: 115%;
 }
 @media screen and (min-width: 1000px) {
   #middle .declaration .textwrap p {
     width: 50%;
-    margin: 0 25%;
+    margin: 0 25% 1.5em;
   }
 }
 @media screen and (max-width: 1000px) {
   #middle .declaration .textwrap p {
     width: 80%;
-    margin: 0 10%;
+    margin: 0 10% 1.5em;
   }
 }
 @media screen and (max-width: 500px) {
   #middle .declaration .textwrap p {
     width: 90%;
-    margin: 0 5%;
+    margin: 0 5% 1.5em;
   }
 }
 #middle .trio {
