@@ -70,3 +70,8 @@ a:hover {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+.subitem {
+  font-family: 'Bree Serif', serif;
+  color: #354d68;
+  font-size: 120%;
+}

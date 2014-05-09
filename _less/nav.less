@@ -5,6 +5,7 @@
   position:fixed;
   top: 0;
   width: 100%;
+  height: 70px;
   z-index: 1000;
   border-bottom: 2px solid transparent;
   .transition-duration(@duration: 0.5s);
@@ -101,16 +102,32 @@
   }
 }// dark
 
-// /*
-//   Dark red
-// ================|
-// */
+/*
+Scrolling down
+================|
+*/
 
-.darkred {
-
-}// dark
-
-// //Mobile nav: hiding desktop nav and showing mobile
-// #menu{
-//
-// }
+#desktopmenuwrap.scrolldown {
+  height: 60px;
+  background-color: rgba(255,255,255,0.4);
+  border-bottom: 0 !important;
+  .title a svg {
+    width: 5.6em;
+    height: 3.7em;
+    transition-property: fill;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    }
+  #menu {
+    ul {
+      margin: 0;
+      li {
+          float: right;
+          list-style-type: none;
+          padding: 0.9em 1em 0.9em;
+      }
+    }
+  }
+}
