@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-03-24 11:09:28
+image: /img/html5.png
 categories: jekyll update
 ---
 

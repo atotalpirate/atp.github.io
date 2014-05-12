@@ -18,7 +18,7 @@
 
         <!-- Google Web Font (THANKS! you buncha nerds) -->
 
-        <link href='http://fonts.googleapis.com/css?family=Overlock+SC|Nova+Slim|PT+Mono|Offside|Rationale|Russo+One|Unica+One|Audiowide|Baumans|Megrim|Nova+Cut|Aldrich|Homenaje|Open+Sans:400italic,600italic,400,300,600,700,800|Open+Sans:300italic,400,300,600,700,800|Gentium+Book+Basic|Oswald|Bree+Serif' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Megrim|Open+Sans:400italic,600italic,400,300,600,700,800|Open+Sans:300italic,400,300,600,700,800||Bree+Serif' rel='stylesheet' type='text/css'>
 
 
         <!-- Normalizer -->
@@ -44,12 +44,19 @@
 
         {% endif %}
 
+        {% if page.title == 'Blog' %}
+
+        <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+        {% endif %}
+
         </head>
         <body>
 
             <div class="site">
 
-              <div id="desktopmenuwrap" class="header">
+              <div id="desktopmenuwrap"
+              class="header {% unless page.title == 'Home' %}dark{% endunless %}">
                 <h1 class="title">
                   <a href="/">
                     {% include atp.svg %}
@@ -57,9 +64,9 @@
               </h1>
                 <div id="menu" class="desktopnav">
                     <ul>
-                        <li><a href='#home'>home</a></li>
-                        <li><a href='#about-me'>blog</a></li>
-                        <li><a href='#gallery'>gallery</a></li>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/blog/">blog</a></li>
+                        <li><a href="#contact">contact</a></li>
                    </ul>
                 </div>
               </div><!--header-->

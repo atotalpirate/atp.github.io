@@ -52,7 +52,7 @@ body {
 }
 body {
   background-color: ;
-  text-align: center;
+  text-align: left;
 }
 .site {
   height: 100%;
@@ -129,6 +129,9 @@ a:visited {
 /*
 /*****************************************************************************/
 /* standard */
+.post {
+  margin: 1em;
+}
 .post pre {
   border: 1px solid ;
   background-color: ;
@@ -139,12 +142,22 @@ a:visited {
   margin-left: 1.35em;
 }
 .post code {
-  border: 1px solid ;
-  background-color: ;
-  padding: 0 .2em;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  padding: .3em;
+  color: #808080;
 }
 .post pre code {
   border: none;
+}
+.highlight pre {
+  background-color: #f1f1f1;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin: 1em;
+  padding: 1em;
 }
 /* terminal */
 .post pre.terminal {

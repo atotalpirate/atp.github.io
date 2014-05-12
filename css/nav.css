@@ -96,6 +96,51 @@ Layout variables
   font-size: 1em;
   font-weight: bold;
 }
+.light {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.light a {
+  color: #ffffff;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.light a:hover {
+  color: #354d68;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.light .title {
+  float: left;
+  margin: 0;
+  font-size: 1em;
+  padding: 0;
+}
+.light .title a svg {
+  width: 6em;
+  height: 4em;
+  fill: #ffffff;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.light .title a:hover svg {
+  fill: #354d68;
+  transition-property: fill;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
 .dark {
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 2px solid #354d68;

@@ -1,0 +1,85 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/* Widths of stuffs
+===========*/
+/* COLORS
+===========*/
+/* rename this to blueink */
+/* COLOR ASSIGNMENTS
+===========*/
+/* PHANTS
+
+font-family: 'Overlock SC', cursive;
+font-family: 'Nova Slim', cursive;
+font-family: 'PT Mono', ;
+font-family: 'Offside', cursive;
+font-family: 'Rationale', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-family: 'Unica One', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Baumans', cursive;
+font-family: 'Megrim', cursive;
+font-family: 'Nova Cut', cursive;
+font-family: 'Aldrich', sans-serif;
+font-family: 'Homenaje', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Gentium Book Basic', serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Bree Serif', serif;
+
+===========*/
+/*
+Layout variables
+====================*/
+#blog {
+  max-width: 800px;
+  min-height: 500px;
+  height: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+#blog #mocksearch {
+  font-size: 3em;
+  margin: 1.8em 5% .5em;
+  max-width: 800px;
+  padding: 0.2em 0;
+  border: none;
+  text-align: center;
+  border-bottom: 4px dashed #e0e7ef;
+  font-family: 'Open Sans', sans-serif;
+  color: #354d68;
+  font-weight: 100;
+  font-style: italic;
+}
+#blog #mocksearch:focus {
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+}
+#blog #postlist {
+  list-style-type: none;
+}
+#blog .post {
+  margin: 0 0 1.5em;
+}
+#blog .post .postfeatured {
+  width: 200px;
+  float: left;
+}
+#blog .post .postwrap {
+  margin-left: 200px;
+}
+#blog .post .postwrap .posttitle {
+  font-family: 'Bree Serif', serif;
+  font-size: 1.68em;
+}
+#blog .post .postwrap .postexcerpt p {
+  font-size: 80%;
+}

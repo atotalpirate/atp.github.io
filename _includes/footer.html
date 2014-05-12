@@ -78,16 +78,14 @@ $(document).ready(function() {
 
   // Header style change on scroll
 
-  // var vh = $(window).height();
     var intro = $("#intro").height();
-    var declaration = $("#declaration").height();
 
     $(function(){
      var changeHeader = intro - 20;
       $(window).scroll(function() {
         var scroll = getCurrentScroll();
           if ( scroll >= changeHeader ) {
-               $('.header').addClass('dark');
+               $('.header').addClass('dark').removeClass('light');
             }
             else {
                 $('.header').removeClass('dark');
@@ -98,9 +96,6 @@ $(document).ready(function() {
         }
     });
 
-
-
-
 });
 
   $("#middle h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' });
@@ -110,6 +105,7 @@ $(document).ready(function() {
 
 {% endif %}
 
+<script src="/js/atp.scrollscript.js"></script>
 <script src="/js/atp.dlmenu.js"></script>
 <script>
     $( '#dl-menu' ).dlmenu();

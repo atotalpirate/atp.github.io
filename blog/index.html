@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+---
+<section id="blog">
+
+  <input type="text" id="mocksearch" value="Search Posts">
+
+  <ul id="postlist">
+    {% for post in site.posts %}
+      <li class="post">
+        <img class="postfeatured" src="{{ post.image }}"/>
+        <div class="postwrap">
+          <a class="posttitle" href="{{ post.url }}">{{ post.title }}</a><br/>
+          <span class="postdate">{{ post.date | date: "%B %-d %Y" }}</span>
+          <span class="postexcerpt">{{ post.excerpt }}</span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</section>

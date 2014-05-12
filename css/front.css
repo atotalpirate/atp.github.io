@@ -277,22 +277,24 @@ Layout variables
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
   filter: alpha(opacity=90);
 }
+body {
+  text-align: center !important;
+}
 #intro {
   position: relative;
   top: 0;
   right: 0;
   height: 100%;
-  min-height: 1000px;
   width: 100%;
 }
 #middle {
   height: 100%;
-  min-height: 1000px;
+  min-height: 670px;
 }
 #middle .declaration {
   position: relative;
   margin: 0 auto;
-  height: 40%;
+  height: 30%;
 }
 #middle .declaration .textwrap {
   position: relative;
@@ -333,7 +335,7 @@ Layout variables
   }
 }
 #middle .trio {
-  height: 60%;
+  height: 70%;
   position: relative;
 }
 #middle .trio .trioitem {
@@ -346,7 +348,8 @@ Layout variables
   -ms-transform: translateY(0%);
   transform: translateY(0%);
   float: left;
-  width: 33.3%;
+  width: 23.3%;
+  margin: 0 5%;
   height: 33%;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -365,6 +368,9 @@ Layout variables
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+#middle .trio .trioitem svg:hover {
+  fill: #4f729a;
+}
 #middle .trio .trioitem .subitem {
   -moz-opacity: 0;
   -khtml-opacity: 0;
@@ -376,6 +382,9 @@ Layout variables
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+}
+#middle .trio .trioitem .subitem p {
+  margin: 0;
 }
 #middle .trio .active.trioitem {
   -webkit-transform: scale(1);
@@ -403,21 +412,60 @@ Layout variables
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   filter: alpha(opacity=0);
   position: absolute;
-  width: 80%;
-  margin: 0 10%;
+  width: 66%;
+  max-width: 1000px;
+  margin: 0 auto;
   top: 50%;
   left: 0;
+  right: 0;
   -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
+@media only screen and (max-width: 768px) {
+  #middle .trio .triospan {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 #middle .trio .triospan img {
-  width: 23.3%;
+  width: 15%;
   margin: 0 5%;
   float: left;
+  -moz-opacity: 3;
+  -khtml-opacity: 3;
+  -webkit-opacity: 3;
+  opacity: 3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=300);
+  filter: alpha(opacity=300);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+  filter: gray;
+  /* IE 6-9 */
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#middle .trio .triospan img:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: gray;
+  /* IE 6-9 */
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 #middle .trio .triospan.active {
+  z-index: 1;
   -moz-opacity: 1;
   -khtml-opacity: 1;
   -webkit-opacity: 1;

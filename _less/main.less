@@ -18,7 +18,7 @@ html, body { height: 100%; }
 
 body {
   background-color: ;
-  text-align: center;
+  text-align: left;
 }
 
 .site {
@@ -109,6 +109,10 @@ a:visited { color: ; }
 /*****************************************************************************/
 
 /* standard */
+.post {
+  margin: 1em;
+}
+
 .post pre {
   border: 1px solid ;
   background-color: ;
@@ -120,13 +124,22 @@ a:visited { color: ; }
 }
 
 .post code {
-  border: 1px solid ;
-  background-color: ;
-  padding: 0 .2em;
+  background-color: @codebackground;
+  border-radius: 4px;
+  padding: .3em;
+  color: @codecolor;
 }
 
 .post pre code {
   border: none;
+}
+
+.highlight pre {
+  background-color: @codebackground;
+  border: none;
+  .rounded(4px);
+  margin: 1em;
+  padding: 1em;
 }
 
 /* terminal */

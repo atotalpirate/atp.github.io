@@ -1,0 +1,1 @@
+$(document).ready(function(){var s=0,o=5;$(window).scroll(function(l){var a=$(this).scrollTop();Math.abs(s-a)<=o&&(a>s?$("#desktopmenuwrap").addClass("scrolldown").removeClass("scrollup"):$("#desktopmenuwrap").addClass("scrollup").removeClass("scrolldown")),s=a})});
