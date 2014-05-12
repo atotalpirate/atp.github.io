@@ -44,11 +44,23 @@
 
         {% endif %}
 
-        {% if page.title == 'Blog' %}
+        {% if page.type == 'Post' %}
+
+        <link type="text/css" rel="stylesheet" href="/css/posts.css">
+
+        {% endif %}
+
+        {% if page.type == 'Contact' %}
+
+        <link type="text/css" rel="stylesheet" href="/css/contact.css">
+
+        {% endif %}
+
+        {% unless page.title == 'Home' %}
 
         <link type="text/css" rel="stylesheet" href="/css/blog.css">
 
-        {% endif %}
+        {% endunless %}
 
         </head>
         <body>
@@ -65,8 +77,8 @@
                 <div id="menu" class="desktopnav">
                     <ul>
                         <li><a href="/">home</a></li>
-                        <li><a href="/blog/">blog</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <li><a href="/blog">blog</a></li>
+                        <li><a href="/contact">contact</a></li>
                    </ul>
                 </div>
               </div><!--header-->

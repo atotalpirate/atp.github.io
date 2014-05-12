@@ -55,7 +55,7 @@ Layout variables
   font-family: 'Bree Serif', serif;
   font-size: 150%;
 }
-.footer .container {
+.footer .footerwrap {
   position: relative;
   top: 20%;
   -webkit-transform: translateY(-20%);
@@ -64,71 +64,71 @@ Layout variables
   -ms-transform: translateY(-20%);
   transform: translateY(-20%);
 }
-.footer .container .social {
+.footer .footerwrap .social {
   width: 57.52%;
   margin: 0.5% 1%;
   float: left;
   display: block;
 }
-.footer .container .social h1 {
+.footer .footerwrap .social h1 {
   text-align: left;
 }
-.footer .container .social p {
+.footer .footerwrap .social p {
   font-size: 1rem;
   float: left;
 }
-.footer .container .social .footeritemwrap {
+.footer .footerwrap .social .footeritemwrap {
   display: inline-block;
   width: 100%;
   position: relative;
 }
-.footer .container .social .footeritemwrap .footeritem {
+.footer .footerwrap .social .footeritemwrap .footeritem {
   width: 75px;
   height: 75px;
   float: left;
 }
 @media only screen and (max-width: 500px) {
-  .footer .container .social .footeritemwrap .footeritem {
+  .footer .footerwrap .social .footeritemwrap .footeritem {
     width: 50px;
     height: 50px;
   }
 }
-.footer .container .social .footeritemwrap .footeritem a {
+.footer .footerwrap .social .footeritemwrap .footeritem a {
   width: 50%;
   display: block;
   margin: 0 auto;
 }
-.footer .container .social .footeritemwrap .footeritem a svg {
+.footer .footerwrap .social .footeritemwrap .footeritem a svg {
   fill: #400907;
 }
-.footer .container .social .footeritemwrap .footeritem::after {
+.footer .footerwrap .social .footeritemwrap .footeritem::after {
   clear: both;
 }
-.footer .container .other {
+.footer .footerwrap .other {
   width: 38.47%;
   float: left;
   margin: 0.5% 1%;
 }
-.footer .container .other h1 {
+.footer .footerwrap .other h1 {
   text-align: right;
 }
-.footer .container .other ul {
+.footer .footerwrap .other ul {
   list-style-type: none;
   text-align: right;
 }
-.footer .container .other hr {
+.footer .footerwrap .other hr {
   background-color: #400907;
   display: block;
   border: 2px solid;
 }
-.footer .container .other a.extra {
+.footer .footerwrap .other a.extra {
   text-align: right;
   text-transform: uppercase;
   margin: 1em;
   color: #400907;
   display: block;
 }
-.footer .container .other .contact {
+.footer .footerwrap .other .contact {
   background-color: #400907 !important;
   padding: 1rem;
   color: #85120f !important;
@@ -141,7 +141,7 @@ Layout variables
   float: right;
   margin: 0 1em 0 0 !important;
 }
-.footer .container .other .contact:hover {
+.footer .footerwrap .other .contact:hover {
   background-color: #85120f !important;
   color: #400907 !important;
 }
@@ -150,6 +150,7 @@ Layout variables
   bottom: 0;
   width: 100%;
   font-size: 68%;
+  text-align: center;
 }
 .footer .rss {
   margin-top: 1.1em;

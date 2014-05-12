@@ -37,17 +37,13 @@ font-family: 'Bree Serif', serif;
 Layout variables
 ====================*/
 #blog {
-  max-width: 800px;
-  min-height: 500px;
-  height: 80%;
-  margin: 0 auto;
   text-align: left;
 }
 #blog #mocksearch {
   font-size: 3em;
-  margin: 1.8em 5% .5em;
-  max-width: 800px;
+  width: 100%;
   padding: 0.2em 0;
+  margin: 0 0 0.5em;
   border: none;
   text-align: center;
   border-bottom: 4px dashed #e0e7ef;
@@ -65,21 +61,30 @@ Layout variables
 }
 #blog #postlist {
   list-style-type: none;
+  padding: 0;
 }
-#blog .post {
-  margin: 0 0 1.5em;
+#blog #postlist .posts {
+  margin: 0 auto 1.5em;
+  width: 800px;
 }
-#blog .post .postfeatured {
+#blog #postlist .posts .postfeatured {
   width: 200px;
   float: left;
 }
-#blog .post .postwrap {
+#blog #postlist .posts .postwrap {
   margin-left: 200px;
+  border-bottom: 2px dashed #f1f1f1;
+  padding-bottom: 1em;
 }
-#blog .post .postwrap .posttitle {
+#blog #postlist .posts .postwrap .posttitle {
   font-family: 'Bree Serif', serif;
   font-size: 1.68em;
+  margin-bottom: .5em;
+  display: inline-block;
 }
-#blog .post .postwrap .postexcerpt p {
+#blog #postlist .posts .postwrap .postexcerpt p {
   font-size: 80%;
+}
+#blog #postlist .posts p {
+  color: grey;
 }

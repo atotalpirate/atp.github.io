@@ -110,12 +110,12 @@ Layout variables
   width: 80%;
   max-width: 1000px;
   margin: 0 auto;
-  top: 20%;
-  -webkit-transform: translateY(-20%);
-  -moz-transform: translateY(-20%);
-  -o-transform: translateY(-20%);
-  -ms-transform: translateY(-20%);
-  transform: translateY(-20%);
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+  -moz-transform: translateY(-30%);
+  -o-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
 }
 #home-carousel .owl-controls .owl-pagination .owl-page {
   width: 40%;

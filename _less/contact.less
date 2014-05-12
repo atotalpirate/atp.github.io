@@ -1,0 +1,36 @@
+@import "variables";
+@import "elements";
+
+
+#contact {
+  min-height: 600px;
+  h1.fitText {
+    font-family: @headerfont;
+    color: @darkblueink;
+    text-align: center;
+  }
+  form {
+    input, select {
+      width: 92%;
+      border: none;
+      background: white;
+      padding: 1.5% 3%;
+      margin: 1%;
+      .rounded(4px);
+      background: @lightblueink;
+    }// input
+    .half {
+      width: 42%;
+      float: left;
+    }// .half
+    input[type="submit"]{
+      width: 66.6%;
+      background: @blueink;
+      color: @darkblueink;
+      margin: 1em auto;
+      display: block;
+      font-size: 120%;
+      font-family: @headerfont;
+    }
+  }// form
+}// #contact

@@ -1,5 +1,5 @@
   <div class="footer">
-    <div class="container">
+    <div class="footerwrap">
       <div class="social">
         <h1>Be Social.</h1>
 
@@ -33,11 +33,11 @@
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="/js/jquery.menu.js"></script>
+<script src="/js/jquery.fittext.js"></script>
 
 {% if page.title == 'Home' %}
 
 <script src="/js/owl.carousel.min.js"></script>
-<script src="/js/jquery.fittext.js"></script>
 <script src="/js/atp.js"></script>
 <script>
 
@@ -106,9 +106,23 @@ $(document).ready(function() {
 {% endif %}
 
 <script src="/js/atp.scrollscript.js"></script>
-<script src="/js/atp.dlmenu.js"></script>
+<!-- <script src="/js/atp.dlmenu.js"></script> -->
 <script>
-    $( '#dl-menu' ).dlmenu();
+    // $( "#dl-menu" ).dlmenu();
+    $(".fitText").fitText(1.2, { minFontSize: '20px', maxFontSize: '150px' });
 </script>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+    
 </body>
 </html>

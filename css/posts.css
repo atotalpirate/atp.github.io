@@ -36,43 +36,25 @@ Layout variables
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
-/*
-FONT STUFF
-
-====================*/
-.header {
-  font-family: 'Megrim', cursive !important;
-  font-size: 16px;
+.post {
+  margin: 80px auto 1.5em;
+  width: 800px;
 }
-body {
-  font-family: 'Open Sans', sans-serif !important;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #7b99bb;
+.post .postfeatured {
+  width: 200px;
+  float: left;
 }
-@media screen and (max-width: 400px) {
-  body {
-    font-size: 15px;
-  }
-}
-a {
-  color: #354d68;
-  font-weight: bold;
-  text-decoration: none;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-a:hover {
-  color: #7b99bb;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-.subitem {
+.post .posttitle {
   font-family: 'Bree Serif', serif;
-  color: #354d68;
-  font-size: 120%;
+  width: 100%;
+  line-height: 1;
+  font-size: 1.68em;
+  margin-bottom: .5em;
+  display: inline-block;
+}
+.post .meta .postdate {
+  font-weight: bold;
+}
+.post p {
+  color: grey;
 }
