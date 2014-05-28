@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title: "Address to the Nation"
+image: /img/angular.png
 categories: speeches
 speaker: "George W. Bush"
 ---

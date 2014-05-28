@@ -67,26 +67,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/_less\/blog.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_less\/blog.less",
-		"outputAbbreviatedPath": "\/css\/blog.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
 	"\/_less\/contact.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -217,6 +197,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_less\/owl.less",
 		"outputAbbreviatedPath": "\/css\/owl.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/_less\/post.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_less\/post.less",
+		"outputAbbreviatedPath": "\/css\/post.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -391,27 +391,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_posts\/2013-12-18-bacon-ipsum-tiny.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2013-12-18-bacon-ipsum-tiny.md",
-		"outputAbbreviatedPath": "\/_posts\/2013-12-18-bacon-ipsum-tiny.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_posts\/2013-12-24-bacon-ipsum-long.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2013-12-24-bacon-ipsum-long.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_posts\/2013-12-24-bacon-ipsum-long.md": {
 		"enableFootnoteSupport": 0,
 		"enableSmartyPants": 1,
@@ -421,15 +400,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_posts\/2013-12-24-bacon-ipsum-long.md",
 		"outputAbbreviatedPath": "\/_posts\/2013-12-24-bacon-ipsum-long.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_posts\/2014-01-12-really-long-title-post.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_posts\/2014-01-12-really-long-title-post.html",
-		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -497,15 +467,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/bacon-ipsum-short\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/bacon-ipsum-tiny\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/bacon-ipsum-tiny\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -609,6 +570,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/css\/post.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/css\/post.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/css\/posts.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -644,6 +614,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/_site\/img\/angular.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12545,
+		"inputAbbreviatedPath": "\/_site\/img\/angular.png",
+		"outputAbbreviatedPath": "\/_site\/img\/angular.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/_site\/img\/beach.jpg": {
 		"fileType": 16384,
@@ -700,6 +681,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/img\/javascript.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4721,
+		"inputAbbreviatedPath": "\/_site\/img\/javascript.png",
+		"outputAbbreviatedPath": "\/_site\/img\/javascript.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/jekyll.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -707,6 +699,17 @@
 		"initialSize": 40286,
 		"inputAbbreviatedPath": "\/_site\/img\/jekyll.png",
 		"outputAbbreviatedPath": "\/_site\/img\/jekyll.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/jquery.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9363,
+		"inputAbbreviatedPath": "\/_site\/img\/jquery.png",
+		"outputAbbreviatedPath": "\/_site\/img\/jquery.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -916,6 +919,17 @@
 		"initialSize": 19947,
 		"inputAbbreviatedPath": "\/_site\/img\/tech\/php-logo.jpeg",
 		"outputAbbreviatedPath": "\/_site\/img\/tech\/php-logo.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/tech\/Untitled-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4730,
+		"inputAbbreviatedPath": "\/_site\/img\/tech\/Untitled-1.png",
+		"outputAbbreviatedPath": "\/_site\/img\/tech\/Untitled-1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4294,6 +4308,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/post.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/post.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/posts.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -4329,6 +4352,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/img\/angular.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12545,
+		"inputAbbreviatedPath": "\/img\/angular.png",
+		"outputAbbreviatedPath": "\/img\/angular.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/beach.jpg": {
 		"fileType": 16384,
@@ -4385,6 +4419,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/javascript.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4721,
+		"inputAbbreviatedPath": "\/img\/javascript.png",
+		"outputAbbreviatedPath": "\/img\/javascript.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/jekyll.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -4392,6 +4437,17 @@
 		"initialSize": 40286,
 		"inputAbbreviatedPath": "\/img\/jekyll.png",
 		"outputAbbreviatedPath": "\/img\/jekyll.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/jquery.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9363,
+		"inputAbbreviatedPath": "\/img\/jquery.png",
+		"outputAbbreviatedPath": "\/img\/jquery.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4601,6 +4657,17 @@
 		"initialSize": 19947,
 		"inputAbbreviatedPath": "\/img\/tech\/php-logo.jpeg",
 		"outputAbbreviatedPath": "\/img\/tech\/php-logo.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/tech\/Untitled-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4730,
+		"inputAbbreviatedPath": "\/img\/tech\/Untitled-1.png",
+		"outputAbbreviatedPath": "\/img\/tech\/Untitled-1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

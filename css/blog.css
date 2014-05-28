@@ -70,6 +70,7 @@ Layout variables
 #blog #postlist .posts .postfeatured {
   width: 200px;
   float: left;
+  position: absolute;
 }
 #blog #postlist .posts .postwrap {
   margin-left: 200px;
@@ -84,6 +85,9 @@ Layout variables
 }
 #blog #postlist .posts .postwrap .postexcerpt p {
   font-size: 80%;
+}
+#blog #postlist .posts .postwrap .postexcerpt hr {
+  border: none;
 }
 #blog #postlist .posts p {
   color: grey;

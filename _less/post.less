@@ -1,0 +1,36 @@
+@import "variables";
+@import "elements";
+
+
+.post {
+  margin: 80px auto 1.5em;
+  width: 90%;
+  max-width: @maxWidth;
+  .postfeatured {
+    width: 200px;
+    float: left;
+  }
+    .posttitle {
+      font-family: @headerfont;
+      color: @darkblueink;
+      width: 100%;
+      line-height: 1.5;
+      font-size: 2.68em;
+      margin-bottom: .5em;
+      display: inline-block;
+    }// postitle
+    .meta {
+      .postdate {
+        font-weight: bold;
+      }
+      a.author {
+        color: @blueink;
+      }
+    }
+  p {
+    color: grey;
+  }// p
+  section.disqus {
+    margin-top: 10%;
+  }
+}//post

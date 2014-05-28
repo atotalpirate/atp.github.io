@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Obama Inaugural Address"
+image: /img/html5.png
 categories: speeches
 ---
+
 
 # Inaugural Address
 by Barak Obama on January 20, 2009

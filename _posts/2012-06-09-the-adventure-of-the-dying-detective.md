@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "The Adventure of the Dying Detective"
+image: /img/less.png
 author: "Arthur Conan Doyle"
 categories: literature
 ---

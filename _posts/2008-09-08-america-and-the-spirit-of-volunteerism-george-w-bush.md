@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title: "America and the Spirit of Volunteerism"
+image: /img/less.png
 categories: speeches
 speaker: "George W. Bush"
 ---

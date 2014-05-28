@@ -1,9 +1,11 @@
 ---
-layout: default
+layout: post
 title: "The Adventure of the Cardboard Box"
+image: /img/javascript.png
 author: "Arthur Conan Doyle"
 categories: literature
 ---
+
 
 # The Adventure of the Cardboard Box
 by Arthur Conan Doyle
