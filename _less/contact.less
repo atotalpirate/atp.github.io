@@ -9,43 +9,101 @@
     color: @darkblueink;
     text-align: center;
   }
+  .contactgreeting {
+    color:@grey;
+    margin: 0 8% 1em;
+    text-align: center;
+  }
+  .socialitems {
+    display: inline-block;
+    width: 80%;
+    margin: 2em 10%;
+    position: relative;
+    .socialitem {
+      width: 100px;
+      height: 100px;
+      float: left;
+      @media only screen and (max-width : 500px) {
+        width: 50px;
+        height: 50px;
+      }// @media
+      a {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        svg {
+          fill: @lightblueink;
+          .transition-duration(@duration: 0.5s);
+          &:hover {
+            fill: @blueink;
+            .transition-duration(@duration: 0.5s);
+          }
+        }// svg
+      }// a
+      a.resume {
+        svg {
+          fill: @blueink;
+          &:hover {
+            fill: @darkblueink;
+          }
+        }
+      }// .resume
+    }// socialitem
+  }//socialitemwrap
   form {
+    margin-bottom: 10em;
+    label {
+      font-family: @headerfont;
+      color: @darkblueink;
+      margin-left: 2%;
+      font-size: 120%;
+    }
     select {
       appearance:none;
       -moz-appearance:none;
       -webkit-appearance:none;
       padding-right: 1px;
     }// select
-    input, select {
-      width: 92%;
+    input, select, textarea {
+      width: 88%;
+      min-height:50px;
       border: none;
       background: white;
       padding: 1.5% 3%;
-      margin: 1%;
+      margin: 2%;
       color: @lightergrey;
       font-weight: ;
       font-family: @defaultfont;
       .rounded(4px);
-      background: lighten(@lightergrey, 35%);
+      background: lighten(@blueink, 35%);
       .transition-duration(@duration: 0.5s);
     }// input
-    input:focus, select:focus {
+    input:focus, select:focus, textarea:focus {
       outline: none;
+      color: white;
       background-color: lighten(@lightergrey, 30%);
       .transition-duration(@duration: 0.5s);
     }// input:focus
+    textarea {
+      width: 91% !important;
+      margin: 2% 1% 0 !important;
+    }
     .half {
-      width: 42%;
+      width: 50%;
       float: left;
     }// .half
     input[type="submit"]{
       width: 66.6%;
       background: @blueink;
       color: @darkblueink;
-      margin: 1em auto;
+      margin: 2em auto 0;
       display: block;
       font-size: 120%;
       font-family: @headerfont;
+      &:hover {
+        background: @darkblueink;
+        color: @lightblueink;
+      }
     }
   }// form
 }// #contact

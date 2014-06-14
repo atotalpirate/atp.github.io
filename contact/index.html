@@ -7,27 +7,50 @@ type: Contact
 
   <h1 class="fitText">Get in touch.</h1>
 
-  <form action="http://getsimpleform.com/messages?form_api_token=62cbae6d7c4c0ded379219394841bec9" method="post">
-    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-    <input type='hidden' name='redirect_to' value='http://atotalpirate.github.io' />
-    <!-- all your input fields here.... -->
-    <input class="first half" type='text' name='First' value="first name"/>
+  <p class="contactgreeting">If you want to contact me for any reason, you can find me on any social media listed below or fill out the form and I’ll reply as soon as I can.</p>
 
-    <input class="last half" type='text' name='Last' value="last name"/>
 
-    <input class="email half" type='text' name='email' value="email" />
+    <div class="socialitems">
+        <div class="socialitem">
+          <a target="_blank" href="https://github.com/atotalpirate">{% include github.svg %}</a><br />
+        </div>
+        <div class="socialitem">
+          <a target="_blank" href="https://twitter.com/atotalpirate">{% include twitter.svg %}</a><br />
+        </div>
+        <div class="socialitem">
+          <a target="_blank" href="https://www.instagram.com/atotalpirate">{% include instagram.svg %}</a><br />
+        </div>
+        <div class="socialitem">
+          <a target="_blank" href="https://www.behance.net/atotalpirate">{% include behance.svg %}</a><br />
+        </div>
+        <div class="socialitem">
+          <a target="_blank" href="https://play.spotify.com/user/127738682">{% include spotify.svg %}</a><br />
+        </div>
+        <div class="socialitem">
+          <a class="resume" target="_blank" href="/contact/resume/">{% include resume.svg %}</a><br />
+        </div>
+    </div>
 
-    <select class="half">
-      <option value="$1">$1</option>
-      <option value="$100">$100</option>
-      <option value="$1000">$1,000</option>
-      <option value="$10000">$10,000</option>
-    </select>
 
-    <input type='text' name='test' />
+<form action="//forms.brace.io/jnholway@gmail.com" method="POST">
 
-    <input type='submit' value='Submit' />
+    <div class="inputwrap half">
+      <label for="name">Name:</label>
+      <input class="" type="text" name="name" placeholder="">
+    </div>
 
-  </form>
+    <div class="inputwrap half">
+      <label for="email">Email:</label>
+      <input class="" type="email" name="_replyto" placeholder="yourname@email.com">
+    </div>
+
+    <input type="hidden" name="_next" value="//site.io/thanks.html" />
+
+    <div class="inputwrap">
+      <textarea rows="4" placeholder="Drop a line..."></textarea>
+    </div>
+
+    <input type="submit" value="SUBMIT">
+</form>
 
 </section>

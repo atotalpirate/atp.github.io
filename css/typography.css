@@ -48,7 +48,7 @@ body {
   font-family: 'Open Sans', sans-serif !important;
   font-size: 20px;
   line-height: 1.5;
-  color: #7b99bb;
+  color: #949898;
 }
 @media screen and (max-width: 400px) {
   body {
@@ -75,4 +75,13 @@ a:hover {
   font-family: 'Bree Serif', serif;
   color: #354d68;
   font-size: 120%;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bree Serif', serif;
+}
+div#layout a {
+  color: #7b99bb !important;
 }

@@ -56,6 +56,12 @@
 
         {% endif %}
 
+        {% if page.type == 'Resume' %}
+
+        <link type="text/css" rel="stylesheet" href="/css/resume.css">
+
+        {% endif %}
+
         {% unless page.title == 'Home' %}
 
         <link type="text/css" rel="stylesheet" href="/css/posts.css">

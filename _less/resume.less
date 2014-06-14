@@ -1,0 +1,138 @@
+@import "elements";
+@import "variables";
+
+#resume {
+  border-top: 14px solid lighten(@lightblueink, 1%);
+  padding-top: 1em;
+  line-height: 1.5;
+
+
+  section.top {
+    min-height: 14em;
+    div {
+      width: 50%;
+      float: left;
+    }//div
+  }//section.top
+
+  section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  section div {
+    width: 80%;
+    float: right;
+  }
+
+  .contactinfo {
+    h1.title {
+      text-align: right;
+      font-size: 40px;
+      span {
+        font-size: 20px;
+      }//span
+    }//.title
+    ul {
+      padding: 0;
+      li {
+        list-style-type: none;
+        font-size: 80%;
+        line-height: 1.5;
+        span.left {
+          width: 5em;
+          display: inline-block;
+          text-align: right;
+          margin-right: 15px;
+          font-weight: bold;
+          color:@blueink;
+        }
+      }// li
+    }// ul
+  }//contactinfo
+
+  .title {
+    color: @darkblueink;
+    font-size: 120%;
+    margin-bottom: 0;
+    span {
+      font: italic 100 90%/150% @defaultfont;
+      color: @blueink;
+    }
+  }
+
+  .mo {
+    font-size: 120%;
+    text-align: right;
+    margin-top: 0.5em;
+    div.hr {
+      border-top: 14px dashed lighten(@lightblueink, 1%);
+      float: right !important;
+      margin-top: 1em;
+    }
+  }
+
+  section > h3 {
+    width: 16.6666%;
+    border-right: 1px solid;
+    float: left;
+    height: 5em;
+    padding-top: 2em;
+    margin-top: 1em;
+    font: italic bold 80%/150% @defaultfont;
+    color: @darkblueink;
+  }
+
+  section.experience {
+    .job {
+      p {
+        font-size: 80%;
+      }//p
+      ul {
+        li {
+          font-size: 75%;
+          color: @darkblueink;
+          span {
+            color: @grey;
+          }
+        }
+      }
+    }//job
+  }//experience
+  section.eduandskills {
+    .school {
+      width: 35%;
+      float: left;
+      font-size: 75%;
+      margin-left: 1.5em;
+    }//school
+    .skills {
+      width: 45%;
+      float: right;
+      ul {
+        li {
+          list-style-type: none;
+          display: inline-block;
+          float: right;
+          text-align: justify;
+          margin-right: 6px;
+          font-size: 96%;
+          span {
+            color: @darkblueink;
+            font-family: @headerfont;
+          }
+        }
+      }
+    }
+  }
+  div.endresume {
+    height: 15em;
+    margin-bottom: 5em;
+    svg{
+      fill: #f7f7f7;
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}// #resume
