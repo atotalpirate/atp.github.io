@@ -71,11 +71,8 @@ Layout variables
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext h1 {
-  font-family: 'Bree Serif', serif;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  margin: 0;
-  padding: 1em;
+#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext .dev {
+  font-family: courier;
 }
 #home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext p {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
@@ -280,6 +277,9 @@ Layout variables
 body {
   text-align: center !important;
 }
+section {
+  min-height: 900px;
+}
 #intro {
   position: relative;
   top: 0;
@@ -296,6 +296,7 @@ body {
   position: relative;
   margin: 0 auto;
   height: 30%;
+  min-height: 300px;
 }
 #middle .declaration .textwrap {
   position: relative;
@@ -338,6 +339,7 @@ body {
 #middle .trio {
   height: 70%;
   width: 85%;
+  max-width: 900px;
   position: relative;
   margin: 0 auto;
 }

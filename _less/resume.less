@@ -127,12 +127,24 @@
   }
   div.endresume {
     height: 15em;
-    margin-bottom: 5em;
-    svg{
-      fill: #f7f7f7;
-      width: 50%;
-      margin: 0 auto;
-      display: block;
-    }
-  }
+    margin: 3em 0 5em;
+    border-top: 14px solid lighten(@lightblueink, 1%);
+    .dl {
+      svg{
+        fill: lighten(@lightergrey, 20%);
+        width: 160px;
+        margin: 0 auto;
+        display: block;
+        .transition-duration(@duration: 0.5s);
+      }//svg
+      span {
+        text-align: center;
+        display: block;
+      }// span
+      &:hover svg {
+        fill: @blueink;
+        .transition-duration(@duration: 0.5s);
+      }// svg:hover
+    }//.dl
+  }//endresume
 }// #resume

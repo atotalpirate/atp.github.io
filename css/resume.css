@@ -142,11 +142,27 @@ Layout variables
 }
 #resume div.endresume {
   height: 15em;
-  margin-bottom: 5em;
+  margin: 3em 0 5em;
+  border-top: 14px solid #e3eaf1;
 }
-#resume div.endresume svg {
-  fill: #f7f7f7;
-  width: 50%;
+#resume div.endresume .dl svg {
+  fill: #c8caca;
+  width: 160px;
   margin: 0 auto;
   display: block;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#resume div.endresume .dl span {
+  text-align: center;
+  display: block;
+}
+#resume div.endresume .dl:hover svg {
+  fill: #7b99bb;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
