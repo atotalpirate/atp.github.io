@@ -85,3 +85,9 @@ h4 {
 div#layout a {
   color: #7b99bb !important;
 }
+#devheader {
+  font-family: courier;
+}
+#designheader {
+  font-family: 'Megrim', cursive;
+}
