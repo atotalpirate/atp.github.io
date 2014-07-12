@@ -9,7 +9,7 @@ $(document).ready(function(){
       if(trioItem.hasClass("active") || trioAdjacent.hasClass("active")){
         trioItem.removeClass("active");
         trioAdjacent.removeClass("active");
-      })
+      });
 
      $(this).addClass("active");
      $(this).next().addClass("active");
