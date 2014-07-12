@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   var itemIntro = $(".introclick");
-    itemIntro.click(function() {
+    itemIntro.on(click, function() {
 
      var trioItem = $(".introclick");
      var trioAdjacent = $(".introclick + .introwrap");
@@ -9,7 +9,7 @@ $(document).ready(function(){
       if(trioItem.hasClass("active") || trioAdjacent.hasClass("active")){
         trioItem.removeClass("active");
         trioAdjacent.removeClass("active");
-      }
+      })
 
      $(this).addClass("active");
      $(this).next().addClass("active");
