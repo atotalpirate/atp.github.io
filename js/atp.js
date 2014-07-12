@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   var itemIntro = $(".introclick");
-    itemIntro.on(click, function() {
+    itemIntro.on("click", function() {
 
      var trioItem = $(".introclick");
      var trioAdjacent = $(".introclick + .introwrap");
