@@ -4442,6 +4442,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/ajax.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7010,
+		"inputAbbreviatedPath": "\/img\/ajax.png",
+		"outputAbbreviatedPath": "\/img\/ajax.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/angular.png": {
 		"fileType": 32768,
 		"ignore": 0,
