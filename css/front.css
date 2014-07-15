@@ -277,9 +277,6 @@ Layout variables
 body {
   text-align: center !important;
 }
-section {
-  min-height: 900px;
-}
 #intro {
   position: relative;
   top: 0;
@@ -427,62 +424,31 @@ section {
   transition-duration: 0.5s;
 }
 #middle {
-  height: 100%;
-  min-height: 800px;
-  padding-bottom: ;
-}
-#middle .declaration {
   position: relative;
-  margin: 0 auto;
-  height: 30%;
-  min-height: 300px;
+  width: 100%;
 }
-#middle .declaration .textwrap {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+#middle .textwrap {
+  max-width: 800px;
+  margin: 10% auto 5%;
 }
-#middle .declaration .textwrap h1 {
-  line-height: 1;
+#middle .textwrap h1 {
   color: #354d68;
   font-family: 'Bree Serif', serif;
-  margin-top: 0;
-}
-#middle .declaration .textwrap p {
-  width: 60%;
-  margin: 0 auto;
-  font-size: 115%;
-}
-@media screen and (min-width: 1000px) {
-  #middle .declaration .textwrap p {
-    width: 50%;
-    margin: 0 25%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  #middle .declaration .textwrap p {
-    width: 80%;
-    margin: 0 10%;
-  }
 }
 @media screen and (max-width: 500px) {
-  #middle .declaration .textwrap p {
+  #middle .textwrap p {
     width: 90%;
     margin: 0 5%;
   }
 }
-#middle .trio {
-  height: 70%;
-  width: 85%;
-  max-width: 900px;
+.trio {
+  height: 20%;
+  width: 100%;
+  max-width: 1200px;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 5%;
 }
-#middle .trio .trioitem {
+.trio .trioitem {
   cursor: pointer;
   position: relative;
   top: 0%;
@@ -494,7 +460,7 @@ section {
   float: left;
   width: 23.3%;
   margin: 0 5%;
-  height: 23.3%;
+  height: 75%;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -o-transform: scale(0.8);
@@ -505,17 +471,17 @@ section {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#middle .trio .trioitem svg {
+.trio .trioitem svg {
   fill: #7b99bb;
   -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#middle .trio .trioitem svg:hover {
+.trio .trioitem svg:hover {
   fill: #4f729a;
 }
-#middle .trio .trioitem .subitem {
+.trio .trioitem .subitem {
   -moz-opacity: 0;
   -khtml-opacity: 0;
   -webkit-opacity: 0;
@@ -527,10 +493,10 @@ section {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#middle .trio .trioitem .subitem p {
+.trio .trioitem .subitem p {
   margin: 0;
 }
-#middle .trio .trioitem.active {
+.trio .trioitem.active {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -o-transform: scale(1);
@@ -541,14 +507,14 @@ section {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#middle .trio .trioitem.active svg {
+.trio .trioitem.active svg {
   fill: #354d68;
   -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#middle .trio .triospan {
+.trio .triospan {
   -moz-opacity: 0;
   -khtml-opacity: 0;
   -webkit-opacity: 0;
@@ -567,12 +533,12 @@ section {
   transition-duration: 0.5s;
 }
 @media only screen and (max-width: 768px) {
-  #middle .trio .triospan {
+  .trio .triospan {
     width: 100%;
     margin: 0 auto;
   }
 }
-#middle .trio .triospan img {
+.trio .triospan img {
   width: 15%;
   margin: 0 5%;
   float: left;
@@ -594,7 +560,7 @@ section {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#middle .trio .triospan img:hover {
+.trio .triospan img:hover {
   -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   -ms-filter: grayscale(0);
@@ -607,10 +573,10 @@ section {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#middle .trio .triospan img.double {
+.trio .triospan img.double {
   width: 25%;
 }
-#middle .trio .triospan.active {
+.trio .triospan.active {
   z-index: 1;
   -moz-opacity: 1;
   -khtml-opacity: 1;
@@ -623,7 +589,7 @@ section {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#middle .trio .active .subitem {
+.trio .active .subitem {
   -moz-opacity: 0.5;
   -khtml-opacity: 0.5;
   -webkit-opacity: 0.5;
@@ -634,4 +600,35 @@ section {
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+}
+.toolswrap {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 0 8%;
+}
+.toolswrap .thing {
+  width: 25%;
+  float: left;
+}
+.toolswrap .thing img {
+  max-width: 65%;
+  margin: 17.5%;
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+  filter: gray;
+  /* IE 6-9 */
+}
+.toolswrap .thing img:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  filter: grayscale(0);
+  filter: gray;
+  /* IE 6-9 */
 }

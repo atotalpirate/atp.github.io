@@ -653,6 +653,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/img\/ajax.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5663,
+		"inputAbbreviatedPath": "\/_site\/img\/ajax.png",
+		"outputAbbreviatedPath": "\/_site\/img\/ajax.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/angular.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -770,6 +781,17 @@
 		"initialSize": 40286,
 		"inputAbbreviatedPath": "\/_site\/img\/jekyll.png",
 		"outputAbbreviatedPath": "\/_site\/img\/jekyll.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/jquery-wide.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19234,
+		"inputAbbreviatedPath": "\/_site\/img\/jquery-wide.png",
+		"outputAbbreviatedPath": "\/_site\/img\/jquery-wide.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4570,6 +4592,17 @@
 		"initialSize": 40286,
 		"inputAbbreviatedPath": "\/img\/jekyll.png",
 		"outputAbbreviatedPath": "\/img\/jekyll.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/jquery-wide.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19234,
+		"inputAbbreviatedPath": "\/img\/jquery-wide.png",
+		"outputAbbreviatedPath": "\/img\/jquery-wide.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

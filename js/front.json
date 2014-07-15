@@ -1,46 +1,39 @@
 {
-   "tools":{
       "BUILD":[
          {
-            "name":"html5",
+            "title":"html5",
             "desc":"Imagination, meet implementation. HTML5 is the cornerstone of the W3C's open web platform; a framework designed to support innovation and foster the full potential the web has to offer.",
             "link":"http://www.w3.org/html/logo/",
             "logo":"/img/html5.png"
          },
          {
-            "name":"jekyll",
+            "title":"jekyll",
             "desc":"No more databases, comment moderation, or pesky updates to install—just your content.",
             "link":"http://jekyllrb.com/",
             "logo":"/img/jekyll.png"
          },
          {
-            "name":"wordpress",
+            "title":"wordpress",
             "desc":"WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.",
             "link":"http://wordpress.org/",
             "logo":"/img/wordpress.png"
-         },
-         {
-            "name":"AJAX",
-            "desc":"Ajax (also AJAX; an acronym for Asynchronous JavaScript and XML) is a group of interrelated Web development techniques used on the client-side to create asynchronous Web applications.",
-            "link":"http://en.wikipedia.org/wiki/Ajax_(programming)",
-            "logo":"/img/ajax.png"
          }
       ],
       "DESIGN":[
          {
-            "name":"css3",
+            "title":"css3",
             "desc":"Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language",
             "link":"http://en.wikipedia.org/wiki/Cascading_Style_Sheets",
             "logo":"/img/css3.png"
          },
          {
-            "name":"SASS",
+            "title":"SASS",
             "desc":"NSass is the most mature, stable, and powerful professional grade CSS extension language in the world.",
             "link":"http://sass-lang.com/",
             "logo":"/img/sass.png"
          },
          {
-            "name":"LESS",
+            "title":"LESS",
             "desc":"Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themable and extendable.",
             "link":"http://lesscss.org/",
             "logo":"/img/less.png"
@@ -48,23 +41,22 @@
       ],
       "BEHAVIOR":[
          {
-            "name":"javascript",
+            "title":"javascript",
             "desc":"JavaScript (JS) is a dynamic computer programming language.",
             "link":"http://en.wikipedia.org/wiki/JavaScript",
             "logo":"/img/javascript.png"
          },
          {
-            "name":"jquery",
+            "title":"jquery",
             "desc":"jQuery is a fast, small, and feature-rich JavaScript library.",
             "link":"http://jquery.com/",
             "logo":"/img/jquery.png"
          },
          {
-            "name":"php",
+            "title":"php",
             "desc":"Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.",
             "link":"https://php.net/",
             "logo":"/img/php.png"
          }
       ]
    }
-}
