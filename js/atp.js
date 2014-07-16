@@ -57,10 +57,17 @@ $(function(){
     //Declare empty variable for creating new elements
     newContent = ' ';
     //Loop through JSON data to create new elements
+    var title, logo, desc, link;
     for (var i = 0; i < icons[ID].length; i++) {
 
-      newContent += '<div class="thing ' + icons[ID][i].title.toLowerCase() + '">';
-      newContent += '<div class="thing-content" style="background-image: url("' + icons[ID][i].logo.replace("[:space:]", "/") + '");"><div><span>' + icons[ID][i].title + '</span></div></div>';
+      title = icons[ID][i].title;
+      logo = icons[ID][i].logo;
+      desc = icons[ID][i].desc;
+      link = icons[ID][i].link;
+
+
+      newContent += '<div class="thing ' + title.toLowerCase() + '" style="background: url(' + logo + ');">';
+      newContent += '<div class="thing-content"><div><span>' + title + '</span></div></div>';
       newContent += '</div>';
 
     }
