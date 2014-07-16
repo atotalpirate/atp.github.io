@@ -1,4 +1,4 @@
-atotalpirate.github.io
+atotalpirate.github.io / dev page
 ======================
 
-adding JSON and AJAX interactivity to front page.
+Pay no mind.
