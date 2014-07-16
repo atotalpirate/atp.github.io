@@ -397,9 +397,10 @@ body {
 }
 #intro #carousel .introwrap .headertext h1 {
   font-size: 60px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
-#intro #carousel .introwrap .dev h1 {
-  font-family: courier !important;
+#intro #carousel .introwrap .headertext p {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 #intro #carousel .introwrap .overlay {
   position: absolute;
@@ -573,9 +574,6 @@ body {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.trio .triospan img.double {
-  width: 25%;
-}
 .trio .triospan.active {
   z-index: 1;
   -moz-opacity: 1;
@@ -609,26 +607,39 @@ body {
   margin: 0 0 8%;
 }
 .toolswrap .thing {
-  width: 25%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #949898;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  width: 15%;
+  margin: 2.5% 8.5%;
   float: left;
 }
-.toolswrap .thing img {
-  max-width: 65%;
-  margin: 17.5%;
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1);
-  filter: gray;
-  /* IE 6-9 */
+.toolswrap .thing:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
-.toolswrap .thing img:hover {
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  filter: grayscale(0);
-  filter: gray;
-  /* IE 6-9 */
+.toolswrap .thing .thing-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #949898;
+}
+.toolswrap .thing .thing-content div {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.toolswrap .thing .thing-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #354d68;
+  font-family: bree serif;
 }

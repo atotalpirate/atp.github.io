@@ -86,7 +86,8 @@ div#layout a {
   color: #7b99bb !important;
 }
 #devheader {
-  font-family: courier;
+  font-family: monospace;
+  font-weight: 100;
 }
 #designheader {
   font-family: 'Megrim', cursive;

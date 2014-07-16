@@ -59,12 +59,12 @@ $(function(){
     //Loop through JSON data to create new elements
     for (var i = 0; i < icons[ID].length; i++) {
 
-      newContent += '<div class="thing ' + icons[ID][i].title + '">';
-      newContent += '<img class="logo" src="' + icons[ID][i].logo + '"/>';
+      newContent += '<div class="thing ' + icons[ID][i].title.toLowerCase() + '">';
+      newContent += '<div class="thing-content" style="background-image: url("' + icons[ID][i].logo.replace("[:space:]", "/") + '");"><div><span>' + icons[ID][i].title + '</span></div></div>';
       newContent += '</div>';
 
     }
-    
+
     //Find existing JSON data and remove it
     $('.toolswrap').remove();
     //Build markup that hosts data drawn from JSON via ajax and inject newContent

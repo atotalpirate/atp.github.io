@@ -56,7 +56,7 @@ section {
     }
 
     .introwrap {
-      display: block !important;
+      display:block !important;
       width: 100%;
       height: 100%;
       position: absolute;
@@ -69,11 +69,12 @@ section {
         color: white;
         h1 {
             font-size: 60px;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
         }// h1
+        p {
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+        }
       }// headertext
-      .dev h1 {
-        font-family: courier !important;
-      }
       .overlay {
         position: absolute;
         width: 100%;
@@ -171,11 +172,8 @@ section {
         &:hover {
           .greyscale(@x: 0);
           .transition-duration(@duration: 0.5s);
-        }
-      }
-      img.double {
-        width: 25%;
-      }//image.double
+        }//:hover
+      }// img
     }//triospan
     .triospan.active {
       z-index: 1;
@@ -196,15 +194,38 @@ section {
     max-width: 1000px;
     margin: 0 0 8%;
     .thing{
-      width: 25%;
-      float:left;
-      img {
-        max-width: 65%;
-        margin: 17.5%;
-        .greyscale(@x: 1);
-        &:hover {
-          .greyscale(@x: 0);
-        }
-      }
-    }//thing
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      border:4px solid @lightergrey;
+      .rounded(percentage(1));
+      width: 15%;
+      margin: 2.5% 8.5%;
+      float: left;
+      &:before{
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }//:before
+        .thing-content{
+            position:  absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            color: @lightergrey;
+            div {
+               display: table;
+               width: 100%;
+               height: 100%;
+            }//div
+            span {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                color: @darkblueink;
+                font-family: bree serif;
+            }
+        }//thing-content
+      }//thing
   }//toolswrap

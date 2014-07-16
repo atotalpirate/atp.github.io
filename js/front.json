@@ -17,6 +17,12 @@
             "desc":"WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.",
             "link":"http://wordpress.org/",
             "logo":"/img/wordpress.png"
+         },
+         {
+            "title":"AJAX",
+            "desc":"Ajax (also AJAX; an acronym for Asynchronous JavaScript and XML) is a group of interrelated Web development techniques used on the client-side to create asynchronous Web applications.",
+            "link":"http://en.wikipedia.org/wiki/Ajax_(programming)",
+            "logo":"/img/ajax.png"
          }
       ],
       "DESIGN":[
