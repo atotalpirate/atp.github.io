@@ -1,15 +1,12 @@
 @import "variables";
 @import "elements";
 
-@footerlinkcolor: rgba(250, 235, 215, 1);
-
 .footer {
   height: 20em;
   width: 100%;
   position: absolute;
-  background-color:@redink;
-  color: @darkredink;
-  border-top: 4px solid @darkredink;
+  background-color:@footercolor;
+  color: @darkfootercolor;
   overflow: hidden;
   @media only screen and (max-width : 500px) { font-size: 60%; }
 
@@ -53,7 +50,7 @@
             display: block;
             margin: 0 auto;
             svg {
-              fill: @darkredink;
+              fill: @darkfootercolor;
             }// svg
             &::after {
               clear: both;
@@ -74,7 +71,7 @@
         text-align: right;
       }
       hr {
-        background-color: @darkredink;
+        background-color: @darkfootercolor;
         display: block;
         border: 2px solid;
       }
@@ -82,22 +79,22 @@
         text-align: right;
         text-transform: uppercase;
         margin: 1em;
-        color: @darkredink;
+        color: @darkfootercolor;
         display:block;
       }
       .contact {
-        background-color: @darkredink !important;
+        background-color: @darkfootercolor !important;
         padding: 1rem;
-        color: @redink !important;
-        border: 5px solid @darkredink;
+        color: @footercolor !important;
+        border: 5px solid @darkfootercolor;
         .rounded(6px);
         width: 50%;
         text-align: center !important;
         float: right;
         margin: 0 1em 0 0 !important;
         &:hover {
-          background-color: @redink !important;
-          color: @darkredink !important;
+          background-color: @footercolor !important;
+          color: @darkfootercolor !important;
         }
       }
   }// other

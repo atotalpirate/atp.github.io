@@ -40,9 +40,8 @@ Layout variables
   height: 20em;
   width: 100%;
   position: absolute;
-  background-color: #85120f;
-  color: #400907;
-  border-top: 4px solid #400907;
+  background-color: #cccccc;
+  color: #808080;
   overflow: hidden;
 }
 @media only screen and (max-width: 500px) {
@@ -101,7 +100,7 @@ Layout variables
   margin: 0 auto;
 }
 .footer .footerwrap .social .footeritemwrap .footeritem a svg {
-  fill: #400907;
+  fill: #808080;
 }
 .footer .footerwrap .social .footeritemwrap .footeritem a::after {
   clear: both;
@@ -119,7 +118,7 @@ Layout variables
   text-align: right;
 }
 .footer .footerwrap .other hr {
-  background-color: #400907;
+  background-color: #808080;
   display: block;
   border: 2px solid;
 }
@@ -127,14 +126,14 @@ Layout variables
   text-align: right;
   text-transform: uppercase;
   margin: 1em;
-  color: #400907;
+  color: #808080;
   display: block;
 }
 .footer .footerwrap .other .contact {
-  background-color: #400907 !important;
+  background-color: #808080 !important;
   padding: 1rem;
-  color: #85120f !important;
-  border: 5px solid #400907;
+  color: #cccccc !important;
+  border: 5px solid #808080;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -144,8 +143,8 @@ Layout variables
   margin: 0 1em 0 0 !important;
 }
 .footer .footerwrap .other .contact:hover {
-  background-color: #85120f !important;
-  color: #400907 !important;
+  background-color: #cccccc !important;
+  color: #808080 !important;
 }
 @media only screen and (max-width: 1150px) {
   .footer .footerwrap {

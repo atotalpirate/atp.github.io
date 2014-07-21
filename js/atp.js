@@ -50,9 +50,9 @@ $(function(){
   $('.trioitem').on('click', function(){
 
     //Declare variables
-    var newContent;
+    var newContent, ID, $toolsWrap;
     //Get and cache ID attribute of clicked icon for use in looping
-    var ID = this.id.toUpperCase();
+    ID = this.id.toUpperCase();
 
     //Declare empty variable for creating new elements
     newContent = ' ';
@@ -65,17 +65,21 @@ $(function(){
       desc = icons[ID][i].desc;
       link = icons[ID][i].link;
 
-
-      newContent += '<div class="thing ' + title.toLowerCase() + '" style="background: url(' + logo + ');">';
+      newContent += '<a target="_blank" class="' + title.toLowerCase() + '" href="' + link + '">';
+      newContent += '<div class="thing" style="background: url(' + logo + ');">';
       newContent += '<div class="thing-content"><div><span>' + title + '</span></div></div>';
       newContent += '</div>';
+      newContent += '</a>';
 
     }
 
-    //Find existing JSON data and remove it
-    $('.toolswrap').remove();
+    //Cache $toolsWrap
+    $toolsWrap = $('.toolswrap');
+    //Find existing JSON data and fade out and remove it
+    $toolsWrap.remove();
     //Build markup that hosts data drawn from JSON via ajax and inject newContent
-    $(".trio").after('<div class="toolswrap">' + newContent + '</div>');
+    $('<div class="toolswrap">' + newContent + '</div>').insertAfter('.trio').hide().show('drop', 500);
+
 
     //Remove active class attribute from other icons
     $('.trio .active').removeClass('active');

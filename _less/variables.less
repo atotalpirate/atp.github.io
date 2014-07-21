@@ -24,27 +24,31 @@
 @blueink:              rgba(123,153,187,1);
 @darkblueink:          darken(@blueink, 30%);
 
-@lightredink:          lighten(@redink, 30%);
-@redink:               #85120f;
-@darkredink:           darken(@redink, 15%);
+@lightfootercolor-base:          lighten(@footercolor-base, 30%);
+@footercolor-base:               #cccccc;
+@darkfootercolor-base:           darken(@footercolor-base, 30%);
 
 /* COLOR ASSIGNMENTS
 ===========*/
 
-@navintrocolor:        #fff;
+@navintrocolor:                  #fff;
 @navintrohovercolor:     @darkblueink;
 
 @navbluecolor:           @darkblueink;
 @navbluehovercolor:      @darkblueink;
 
-@navredcolor:             @darkredink;
-@navredhovercolor:        @darkredink;
+@navdarkcolor:             @footercolor;
+@navdarkhovercolor:        @darkfootercolor;
 
 
 @defaultfontcolor:           @grey;
 
 @codebackground:             #f1f1f1;
 @codecolor:                     grey;
+
+@footercolor:                @footercolor-base;
+@darkfootercolor:        @darkfootercolor-base;
+@lightfootercolor:      @lightfootercolor-base;
 
 /* PHANTS
 

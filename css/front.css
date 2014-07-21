@@ -36,244 +36,6 @@ font-family: 'Bree Serif', serif;
 /*
 Layout variables
 ====================*/
-/* OWL styles
-===============*/
-#home-carousel {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-#home-carousel .owl-wrapper-outer {
-  height: 100%;
-}
-#home-carousel .owl-wrapper-outer .owl-wrapper {
-  height: 100%;
-}
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item {
-  height: 100%;
-}
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap {
-  height: 100%;
-}
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  height: 0;
-  z-index: 10;
-  color: white;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext .dev {
-  font-family: courier;
-}
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .headertext p {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  background-color: rgba(123, 153, 187, 0.8);
-}
-#home-carousel .owl-wrapper-outer .owl-wrapper .owl-item div.introwrap .bgimage {
-  height: 100%;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-  /* IE 6-9 */
-}
-#home-carousel .owl-controls {
-  position: absolute;
-  top: 0;
-  margin-top: 0;
-  z-index: 5;
-  width: 100%;
-  height: 100%;
-}
-#home-carousel .owl-controls .owl-pagination {
-  position: relative;
-  width: 80%;
-  max-width: 1000px;
-  margin: 0 auto;
-  top: 30%;
-  -webkit-transform: translateY(-30%);
-  -moz-transform: translateY(-30%);
-  -o-transform: translateY(-30%);
-  -ms-transform: translateY(-30%);
-  transform: translateY(-30%);
-}
-#home-carousel .owl-controls .owl-pagination .owl-page {
-  width: 40%;
-  margin: 0 5%;
-}
-#home-carousel .owl-controls .owl-pagination .owl-page span {
-  display: block;
-  width: 100%;
-  height: 0;
-  padding-bottom: 67%;
-  background-repeat: no-repeat;
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1);
-  filter: gray;
-  /* IE 6-9 */
-  -moz-opacity: 0.4;
-  -khtml-opacity: 0.4;
-  -webkit-opacity: 0.4;
-  opacity: 0.4;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40);
-  filter: alpha(opacity=40);
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-#home-carousel .owl-controls .owl-pagination .owl-page span:hover {
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-  filter: alpha(opacity=100);
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  filter: grayscale(0);
-  filter: gray;
-  /* IE 6-9 */
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-#home-carousel .owl-controls .owl-pagination .owl-page:nth-child(1) > span {
-  background: url('../img/svg/atp-design.svg') no-repeat;
-}
-#home-carousel .owl-controls .owl-pagination .owl-page:nth-child(2) > span {
-  background: url('../img/svg/atp-code.svg') no-repeat;
-}
-#home-carousel .owl-controls .owl-pagination .active span {
-  width: 100%;
-  position: relative;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-  filter: alpha(opacity=100);
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  filter: grayscale(0);
-  filter: gray;
-  /* IE 6-9 */
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-.work {
-  width: 100%;
-  position: relative;
-  display: block;
-  height: auto;
-  background-color: #7b99bb;
-  margin: 1em 0 0 0 ;
-}
-.work #work-carousel .owl-wrapper-outer .owl-wrapper .owl-item .work-image-wrapper .overlay {
-  width: 100%;
-  padding-bottom: 100%;
-  position: absolute;
-  background-color: #85120f;
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  -webkit-opacity: 0.5;
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
-  top: 0;
-  z-index: 1;
-}
-.work #work-carousel .owl-wrapper-outer .owl-wrapper .owl-item .work-image-wrapper .work-image {
-  width: 100%;
-  padding-bottom: 100%;
-  background-size: cover;
-  background-position: center;
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1);
-  filter: gray;
-  /* IE 6-9 */
-}
-.work #work-carousel .owl-controls {
-  margin-top: 0;
-  text-align: center;
-  position: absolute;
-  top: 45%;
-  width: 100%;
-}
-.work #work-carousel .owl-controls .owl-buttons div {
-  color: rgba(0, 0, 0, 0.9);
-  zoom: 1;
-  margin: 5px;
-  font-size: 35px;
-  -webkit-border-radius: 0%;
-  -moz-border-radius: 0%;
-  border-radius: 0%;
-  background: none;
-  -moz-opacity: 0.5;
-  -khtml-opacity: 0.5;
-  -webkit-opacity: 0.5;
-  opacity: 0.5;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
-  filter: alpha(opacity=50);
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-.work #work-carousel .owl-controls .owl-buttons .owl-prev {
-  position: absolute;
-  left: 0;
-  width: 10px;
-}
-.work #work-carousel .owl-controls .owl-buttons .owl-next {
-  position: absolute;
-  right: 0;
-  width: 10px;
-}
-.work #work-carousel .owl-wrapper-outer + .owl-controls:hover > .owl-buttons > div {
-  color: #ffffff;
-  -moz-opacity: 0.9;
-  -khtml-opacity: 0.9;
-  -webkit-opacity: 0.9;
-  opacity: 0.9;
-  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
-  filter: alpha(opacity=90);
-}
 body {
   text-align: center !important;
 }
@@ -610,13 +372,16 @@ body {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
-  border: 4px solid #949898;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
+  border: 4px solid white;
   width: 15%;
   margin: 2.5% 8.5%;
   float: left;
+  background-size: 100% !important;
+  background-position: 50% 50% !important;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .toolswrap .thing:before {
   content: "";
@@ -633,8 +398,18 @@ body {
 }
 .toolswrap .thing .thing-content div {
   display: table;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 101%;
+  height: 101%;
+  left: 120%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 .toolswrap .thing .thing-content span {
   display: table-cell;
@@ -642,4 +417,21 @@ body {
   vertical-align: middle;
   color: #354d68;
   font-family: bree serif;
+}
+.toolswrap .thing:hover {
+  background-size: 300% !important;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.toolswrap .thing:hover .thing-content div {
+  left: 0;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
