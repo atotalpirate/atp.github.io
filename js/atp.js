@@ -78,7 +78,7 @@ $(function(){
     //Find existing JSON data and fade out and remove it
     $toolsWrap.remove();
     //Build markup that hosts data drawn from JSON via ajax and inject newContent
-    $('<div class="toolswrap">' + newContent + '</div>').insertAfter('.trio').hide().show('drop', 500);
+    $('<div class="toolswrap">' + newContent + '</div>').insertAfter('.trio').hide().show('fade', 500);
 
 
     //Remove active class attribute from other icons

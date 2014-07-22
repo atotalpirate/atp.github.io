@@ -54,6 +54,7 @@ Layout variables
   width: 80%;
   margin: 2em 10%;
   position: relative;
+  margin-bottom: 10em;
 }
 #contact .socialitems .socialitem {
   width: 100px;
@@ -90,9 +91,6 @@ Layout variables
 }
 #contact .socialitems .socialitem a.resume svg:hover {
   fill: #354d68;
-}
-#contact form {
-  margin-bottom: 10em;
 }
 #contact form label {
   font-family: 'Bree Serif', serif;

@@ -223,6 +223,7 @@ section {
                left:120%;
                .rounded(percentage(1));
                background-color: rgba(255,255,255,0.9);
+               .opacity(0);
                .transition-duration(@duration: 0.5s);
             }//div
             span {
@@ -239,6 +240,7 @@ section {
           .transition-duration(@duration: 0.5s);
         }&:hover .thing-content div {
           left: 0;
+          .opacity(1);
           .transition-duration(@duration: 0.5s);
         }
       }//thing

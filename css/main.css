@@ -78,13 +78,13 @@ p {
   margin: 1em 0;
 }
 a {
-  color: ;
+  color: #354d68;
 }
 a:hover {
-  color: ;
+  color: #e0e7ef;
 }
 a:visited {
-  color: ;
+  color: #354d68;
 }
 .container {
   max-width: 800px;
