@@ -107,6 +107,9 @@ Layout variables
     height: 50%;
   }
 }
+#contact form {
+  margin: 10% 5%;
+}
 #contact form label {
   font-family: 'Bree Serif', serif;
   color: #354d68;
