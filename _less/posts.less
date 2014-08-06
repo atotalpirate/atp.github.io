@@ -3,24 +3,6 @@
 
 #blog {
   text-align: left;
-  #mocksearch {
-    font-size: 3em;
-    width: 100%;
-    padding: 0.2em 0;
-margin: 0.5em 0 1em;
-    border: none;
-    text-align: center;
-    border-bottom: 4px dashed @lightblueink;
-    font-family: @defaultfont;
-    color: @darkblueink;
-    font-weight: 100;
-    font-style: italic;
-    &:focus{
-        border-color:none;
-        outline: 0;
-        .inner-shadow(@horizontal:0, @vertical:0px, @blur:0px, @alpha: 0)
-    }// mocksearch:focus
-  }// mocksearch
 
   #postlist {
     list-style-type: none;
@@ -56,6 +38,15 @@ margin: 0.5em 0 1em;
       p {
         color: grey;
       }// p
+      @media only screen and (max-width : 640px) {
+        width:99%;
+        .postfeatured {
+          width:16%;
+        }
+        .postwrap {
+          margin-left: 20%;
+        }
+      }// @media
     }//post
   }// postlist
   div.endblog {

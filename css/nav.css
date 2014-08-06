@@ -28,6 +28,9 @@ font-family: 'Bree Serif', serif;
 
 ===========*/
 /*
+Font sizes for getting all with the being responsive and sheeit.
+====================*/
+/*
 Layout variables
 ====================*/
 /*---------------------------------------------------
@@ -65,7 +68,7 @@ Layout variables
 .header .title {
   float: left;
   margin: 0;
-  font-size: 1em;
+  font-size: 80%;
   padding: 0;
 }
 .header .title a svg {
@@ -93,7 +96,7 @@ Layout variables
   float: right;
   list-style-type: none;
   padding: 1em;
-  font-size: 1em;
+  font-size: 80%;
   font-weight: bold;
 }
 .light {

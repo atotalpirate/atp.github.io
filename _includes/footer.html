@@ -34,41 +34,12 @@
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
-<script src="/js/jquery.fittext.js"></script>
 
 {% if page.title == 'Home' %}
 
 <!-- <script src="/js/owl.carousel.min.js"></script> -->
 <script src="/js/atp.js"></script>
-
-<script>
-  // Header style change on scroll
-
-$(document).ready(function() {
-
-    var intro = $("#intro").height();
-
-    $(function(){
-     var changeHeader = intro - 20;
-      $(window).scroll(function() {
-        var scroll = getCurrentScroll();
-          if ( scroll >= changeHeader ) {
-               $('.header').addClass('dark').removeClass('light');
-            }
-            else {
-                $('.header').removeClass('dark');
-            }
-      });
-    function getCurrentScroll() {
-        return window.pageYOffset;
-        }
-    });
-
-});
-
-  $("#middle h1").fitText(1.2, { minFontSize: '20px', maxFontSize: '50px' });
-
-</script>
+<script src="/js/atp.frontheader.js"></script>
 
 {% endif %}
 

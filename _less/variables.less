@@ -24,9 +24,7 @@
 @blueink:              rgba(123,153,187,1);
 @darkblueink:          darken(@blueink, 30%);
 
-@lightfootercolor-base:          lighten(@footercolor-base, 30%);
-@footercolor-base:               #cccccc;
-@darkfootercolor-base:           darken(@footercolor-base, 30%);
+
 
 /* COLOR ASSIGNMENTS
 ===========*/
@@ -45,6 +43,10 @@
 
 @codebackground:             #f1f1f1;
 @codecolor:                     grey;
+
+@lightfootercolor-base:          lighten(@footercolor-base, 30%);
+@footercolor-base:               #cccccc;
+@darkfootercolor-base:           darken(@footercolor-base, 30%);
 
 @footercolor:                @footercolor-base;
 @darkfootercolor:        @darkfootercolor-base;
@@ -76,6 +78,57 @@ font-family: 'Bree Serif', serif;
 @navfont:              'Megrim', cursive;
 @defaultfont:          'Open Sans', sans-serif;
 @headerfont:           'Bree Serif', serif;
+
+/*
+Font sizes for getting all with the being responsive and sheeit.
+====================*/
+
+//Global Font Base
+@gfb: 20px;
+
+
+//Global
+@body: @gfb;
+
+//Front/Home Page
+@topnav: percentage(0.8);
+@topthirdheader: percentage(3.0);
+
+@declarationheader:percentage(2.4);
+@triosub: percentage(1);
+@toolsub: percentage(1);
+
+@footertext: percentage(1.5);
+@copyright: percentage(0.68);
+
+//Contact Page
+@contacttitle: percentage(2.4);
+@inputtitle: percentage(1.2);
+@formvalue: percentage(1);
+@submit: percentage(1.2);
+
+//Resume Page
+@name: percentage(2.0);
+  @media screen and (max-width: 400px){
+    @name: percentage(1.5);
+  }
+@namespan: percentage(0.5);
+@contactinfo: percentage(0.8);
+
+@mo: percentage(1.2);
+
+@sectionh3: percentage(0.8);
+@jobtitle: percentage(1.2);
+@jobtitlespan: percentage(0.9);
+@joblist: percentage(0.75);
+
+@school: percentage(1);
+@schoolspan: percentage(0.75);
+
+@skills: percentage(0.96);
+
+//Blog Posts page
+
 
 
 /*

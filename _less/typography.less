@@ -5,9 +5,10 @@
 FONT STUFF
 
 ====================*/
-@primaryfontsize:					20px;
+@primaryfontsize:					@gfb;
+@medfontsize:             @primaryfontsize - 2;
 @headerfontsize: 					@primaryfontsize - 4;
-@mobilefontsize: 					@primaryfontsize - 5;
+@mobilefontsize: 					@primaryfontsize - 6;
 
 .header {
   font-family: @navfont !important;
@@ -17,6 +18,9 @@ body {
   font-family: @defaultfont !important;
   font-size: @primaryfontsize;
   line-height: 1.5;
+  @media screen and (max-width: 800px){
+    font-size: @medfontsize;
+  }
   @media screen and (max-width: 400px){
     font-size: @mobilefontsize;
   }

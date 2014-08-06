@@ -28,6 +28,9 @@ font-family: 'Bree Serif', serif;
 
 ===========*/
 /*
+Font sizes for getting all with the being responsive and sheeit.
+====================*/
+/*
 Layout variables
 ====================*/
 /*---------------------------------------------------
@@ -50,9 +53,14 @@ body {
   line-height: 1.5;
   color: #949898;
 }
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 400px) {
   body {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 a {

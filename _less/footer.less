@@ -8,11 +8,10 @@
   background-color:@footercolor;
   color: @darkfootercolor;
   overflow: hidden;
-  .drop-shadow(inset @x-axis: 2px, @y-axis: 2px, @blur: 30px, @alpha: 0.1);
+  .drop-shadow(@inset:inset, @x-axis: 2px, @y-axis: 2px, @blur: 30px, @alpha: 0.1);
   @media only screen and (max-width : 500px) { font-size: 60%; }
 
   h1, .extra {
-    font-family: @headerfont;
     font-size: 150%;
   }//ht, .extra
 
@@ -52,7 +51,11 @@
             margin: 0 auto;
             svg {
               fill: @darkfootercolor;
+              &:hover {
+                fill: @darkblueink;
+              }
             }// svg
+
             &::after {
               clear: both;
             }// ::after
@@ -82,10 +85,13 @@
         margin: 1em;
         color: @darkfootercolor;
         display:block;
+        &:hover {
+          color: @darkblueink;
+        }
       }
       .contact {
         background-color: @darkfootercolor !important;
-        padding: 1rem;
+        padding: 1em;
         color: @footercolor !important;
         border: 5px solid @darkfootercolor;
         .rounded(6px);
@@ -95,7 +101,12 @@
         margin: 0 1em 0 0 !important;
         &:hover {
           background-color: @footercolor !important;
-          color: @darkfootercolor !important;
+          color: @darkblueink !important;
+          border-color: @darkblueink;
+        }
+        @media only screen and (max-width : 600px) {
+            padding: 5px;
+            border-width:2px;
         }
       }
   }// other

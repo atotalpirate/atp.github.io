@@ -28,6 +28,9 @@ font-family: 'Bree Serif', serif;
 
 ===========*/
 /*
+Font sizes for getting all with the being responsive and sheeit.
+====================*/
+/*
 Layout variables
 ====================*/
 /*---------------------------------------------------
@@ -39,10 +42,11 @@ Layout variables
 #contact {
   min-height: 600px;
 }
-#contact h1.fitText {
+#contact h1.getintouch {
   font-family: 'Bree Serif', serif;
   color: #354d68;
   text-align: center;
+  font-size: 240%;
 }
 #contact .contactgreeting {
   color: #949898;
@@ -91,6 +95,17 @@ Layout variables
 }
 #contact .socialitems .socialitem a.resume svg:hover {
   fill: #354d68;
+}
+@media only screen and (max-width: 600px) {
+  #contact .socialitems {
+    width: 99%;
+    margin: 15% 0;
+  }
+  #contact .socialitems .socialitem {
+    width: 29.33%;
+    margin: 2% 2%;
+    height: 50%;
+  }
 }
 #contact form label {
   font-family: 'Bree Serif', serif;
@@ -156,4 +171,9 @@ Layout variables
 #contact form input[type="submit"]:hover {
   background: #354d68;
   color: #e0e7ef;
+}
+@media only screen and (max-width: 600px) {
+  #contact form input[type="submit"] {
+    width: 99%;
+  }
 }

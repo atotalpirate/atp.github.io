@@ -4,10 +4,11 @@
 
 #contact {
   min-height: 600px;
-  h1.fitText {
+  h1.getintouch {
     font-family: @headerfont;
     color: @darkblueink;
     text-align: center;
+    font-size: @contacttitle;
   }
   .contactgreeting {
     color:@grey;
@@ -50,13 +51,22 @@
         }
       }// .resume
     }// socialitem
-  }//socialitemwrap
+    @media only screen and (max-width : 600px) {
+      width: 99%;
+      margin: 15% 0;
+      .socialitem {
+        width:29.33%;
+        margin: 2% 2%;
+        height: 50%;
+      }
+    }// @media
+  }//socialitems
   form {
     label {
       font-family: @headerfont;
       color: @darkblueink;
       margin-left: 2%;
-      font-size: 120%;
+      font-size: @inputtitle;
     }
     select {
       appearance:none;
@@ -104,6 +114,9 @@
         background: @darkblueink;
         color: @lightblueink;
       }
+      @media only screen and (max-width : 600px) {
+        width: 99%;
+      }// @media
     }
   }// form
 }// #contact
