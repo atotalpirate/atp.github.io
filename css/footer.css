@@ -50,11 +50,6 @@ Layout variables
   -moz-box-shadow: inset 2px 2px 30px rgba(0, 0, 0, 0.1);
   box-shadow: inset 2px 2px 30px rgba(0, 0, 0, 0.1);
 }
-@media only screen and (max-width: 500px) {
-  .footer {
-    font-size: 60%;
-  }
-}
 .footer h1,
 .footer .extra {
   font-size: 150%;
@@ -187,4 +182,40 @@ Layout variables
 }
 .footer .rss img {
   border: 0;
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    height: auto;
+  }
+  .footer .footerwrap {
+    width: 98%;
+  }
+  .footer .footerwrap .social {
+    width: 98%;
+  }
+  .footer .footerwrap .social h1 {
+    display: none;
+  }
+  .footer .footerwrap .social .footeritemwrap {
+    margin: 50px 0 20px;
+  }
+  .footer .footerwrap .social .footeritemwrap .footeritem {
+    width: 20%;
+    margin: 0 2.5%;
+    height: 10px;
+  }
+  .footer .footerwrap .other {
+    width: 98%;
+    float: right;
+    margin: 20px 1% 50px;
+  }
+  .footer .footerwrap .other .extra {
+    text-align: center !important;
+  }
+  .footer .footerwrap .other .contact {
+    padding: 5px;
+    border-width: 2px;
+    margin: 0 2% !important;
+    width: 91%;
+  }
 }

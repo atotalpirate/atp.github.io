@@ -32,6 +32,7 @@
         <link type="text/css" rel="stylesheet" href="/css/nav.css"/>
         <link type="text/css" rel="stylesheet" href="/css/footer.css"/>
         <link type="text/css" rel="stylesheet" href="/css/typography.css"/>
+        <link type="text/css" rel="stylesheet" href="/css/mobilenav.css"/>
 
         {% if page.title == 'Home' %}
 
@@ -85,4 +86,15 @@
                         <li><a href="/contact">contact</a></li>
                    </ul>
                 </div>
+
+                <a href="#menu" id="toggle"><span></span></a>
+
+                <div id="menu" class="mobilenav">
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/blog">blog</a></li>
+                        <li><a href="/contact">contact</a></li>
+                   </ul>
+                </div>
+
               </div><!--header-->

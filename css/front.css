@@ -141,8 +141,18 @@ body {
 #intro #carousel .introclick.design {
   left: 10%;
 }
+@media screen and (min-width: 1800px) {
+  #intro #carousel .introclick.design {
+    left: 15%;
+  }
+}
 #intro #carousel .introclick.dev {
   right: 10%;
+}
+@media screen and (min-width: 1800px) {
+  #intro #carousel .introclick.dev {
+    right: 15%;
+  }
 }
 #intro #carousel .introwrap {
   display: block !important;

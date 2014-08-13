@@ -51,6 +51,13 @@ Layout variables
   width: 50%;
   float: left;
 }
+@media screen and (max-width: 600px) {
+  #resume section.top div {
+    width: 100%;
+    font-size: 110%;
+    text-align: center;
+  }
+}
 #resume section {
   position: relative;
   overflow: hidden;
@@ -70,7 +77,9 @@ Layout variables
 }
 @media screen and (max-width: 600px) {
   #resume .contactinfo h1.title {
-    font-size: 180%;
+    font-size: 220%;
+    text-align: center;
+    width: 100%;
   }
 }
 #resume .contactinfo h1.title span {
@@ -86,7 +95,8 @@ Layout variables
 }
 @media screen and (max-width: 600px) {
   #resume .contactinfo ul li {
-    font-size: 72%;
+    font-size: 88%;
+    text-align: center;
   }
 }
 #resume .contactinfo ul li span.left {
@@ -101,6 +111,13 @@ Layout variables
   color: #354d68;
   font-size: 120%;
   margin-bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  #resume .title {
+    font-size: 200%;
+    width: 100%;
+    text-align: center;
+  }
 }
 #resume .title span {
   font: italic 100 90%/150% 'Open Sans', sans-serif;
@@ -183,6 +200,11 @@ Layout variables
     text-align: center;
   }
 }
+@media screen and (max-width: 600px) {
+  #resume section.eduandskills .skills ul {
+    padding: 0;
+  }
+}
 #resume section.eduandskills .skills ul li {
   list-style-type: none;
   display: inline-block;
@@ -190,6 +212,12 @@ Layout variables
   text-align: justify;
   margin-right: 6px;
   font-size: 96%;
+}
+@media screen and (max-width: 600px) {
+  #resume section.eduandskills .skills ul li {
+    float: left;
+    margin-right: 5px;
+  }
 }
 #resume section.eduandskills .skills ul li span {
   color: #354d68;

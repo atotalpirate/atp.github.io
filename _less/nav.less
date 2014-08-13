@@ -24,8 +24,8 @@
     padding: 0;
     a {
       svg {
-        width: 6em;
-        height: 4em;
+        width: 70px;
+        height: 50px;
         fill: @navintrocolor;
         transition-property: fill;
         .transition-duration(@duration: 0.5s);
@@ -37,7 +37,7 @@
       }
     } //a
   } // title
-  #menu {
+  .desktopnav {
     ul {
       margin: 0;
       li {
@@ -75,8 +75,6 @@
     padding: 0;
     a {
       svg {
-        width: 6em;
-        height: 4em;
         fill: @navintrocolor;
         transition-property: fill;
         .transition-duration(@duration: 0.5s);
@@ -109,8 +107,6 @@
     padding: 0;
     a {
       svg {
-        width: 6em;
-        height: 4em;
         fill: @darkblueink;
         transition-property: fill;
         .transition-duration(@duration: 0.5s);
@@ -122,7 +118,10 @@
       }
     } //a
   } // title
-  #menu {
+  #toggle span, #toggle span:after, #toggle span:before {
+      background-color:@darkblueink;
+  }
+  .desktopnav {
     ul {
       margin: 0;
       li {
@@ -145,15 +144,15 @@ Scrolling down
   background-color: rgba(255,255,255,0.4);
   border-bottom: 0 !important;
   .title a svg {
-    width: 5.6em;
-    height: 3.7em;
+    width: 60px;
+    height: 55px;
     transition-property: fill;
     -moz-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
     }
-  #menu {
+  .desktopnav {
     ul {
       margin: 0;
       li {

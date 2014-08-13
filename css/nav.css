@@ -72,8 +72,8 @@ Layout variables
   padding: 0;
 }
 .header .title a svg {
-  width: 6em;
-  height: 4em;
+  width: 70px;
+  height: 50px;
   fill: #ffffff;
   transition-property: fill;
   -moz-transition-duration: 0.5s;
@@ -89,10 +89,10 @@ Layout variables
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.header #menu ul {
+.header .desktopnav ul {
   margin: 0;
 }
-.header #menu ul li {
+.header .desktopnav ul li {
   float: right;
   list-style-type: none;
   padding: 1em;
@@ -127,8 +127,6 @@ Layout variables
   padding: 0;
 }
 .light .title a svg {
-  width: 6em;
-  height: 4em;
   fill: #ffffff;
   transition-property: fill;
   -moz-transition-duration: 0.5s;
@@ -173,8 +171,6 @@ Layout variables
   padding: 0;
 }
 .dark .title a svg {
-  width: 6em;
-  height: 4em;
   fill: #354d68;
   transition-property: fill;
   -moz-transition-duration: 0.5s;
@@ -190,10 +186,15 @@ Layout variables
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.dark #menu ul {
+.dark #toggle span,
+.dark #toggle span:after,
+.dark #toggle span:before {
+  background-color: #354d68;
+}
+.dark .desktopnav ul {
   margin: 0;
 }
-.dark #menu ul li {
+.dark .desktopnav ul li {
   float: right;
   list-style-type: none;
   padding: 1em;
@@ -209,18 +210,18 @@ Scrolling down
   border-bottom: 0 !important;
 }
 #desktopmenuwrap.scrolldown .title a svg {
-  width: 5.6em;
-  height: 3.7em;
+  width: 60px;
+  height: 55px;
   transition-property: fill;
   -moz-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#desktopmenuwrap.scrolldown #menu ul {
+#desktopmenuwrap.scrolldown .desktopnav ul {
   margin: 0;
 }
-#desktopmenuwrap.scrolldown #menu ul li {
+#desktopmenuwrap.scrolldown .desktopnav ul li {
   float: right;
   list-style-type: none;
   padding: 0.9em 1em 0.9em;

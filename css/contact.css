@@ -98,13 +98,13 @@ Layout variables
 }
 @media only screen and (max-width: 600px) {
   #contact .socialitems {
-    width: 75%;
-    margin: 15% 15%;
+    width: 99%;
+    margin: 15% 0.5%;
   }
   #contact .socialitems .socialitem {
     width: 29.33%;
     margin: 2% 2%;
-    height: 50%;
+    height: 80px;
   }
 }
 #contact form {

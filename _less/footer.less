@@ -9,7 +9,6 @@
   color: @darkfootercolor;
   overflow: hidden;
   .drop-shadow(@inset:inset, @x-axis: 2px, @y-axis: 2px, @blur: 30px, @alpha: 0.1);
-  @media only screen and (max-width : 500px) { font-size: 60%; }
 
   h1, .extra {
     font-size: 150%;
@@ -136,4 +135,39 @@
       border: 0;
     } // img
   } // .rss
+  @media only screen and (max-width : 500px) {
+    height:auto;
+
+    .footerwrap {
+      width: 98%;
+      .social {
+        width:98%;
+        h1 {
+          display:none;
+        }// media@h1
+        .footeritemwrap {
+          margin: 50px 0 20px;
+          .footeritem {
+            width: 20%;
+            margin:0 2.5%;
+            height: 10px;
+          }// media@footeritem
+        }// media@footeritemwrap
+      }// media@social
+      .other {
+        width: 98%;
+        float: right;
+        margin: 20px 1% 50px;
+        .extra {
+          text-align: center !important;
+        }
+        .contact {
+          padding: 5px;
+          border-width: 2px;
+          margin: 0 2% !important;
+          width: 91%;
+        }//media@contact
+      }//media@other
+    }// media@footerwrap
+  }// @media
 } //.footer

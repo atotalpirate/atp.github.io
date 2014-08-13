@@ -12,6 +12,11 @@
     div {
       width: 50%;
       float: left;
+      @media screen and (max-width: 600px){
+        width:100%;
+        font-size:110%;
+        text-align:center;
+      }
     }//div
   }//section.top
 
@@ -33,7 +38,10 @@
       text-align: right;
       font-size: @name;
       @media screen and (max-width: 600px){
-        font-size: @name * 0.9;
+        font-size: @name * 1.1;
+        text-align:center;
+        width:100%;
+
       }
       span {
         font-size: @namespan;
@@ -46,7 +54,8 @@
         font-size: @contactinfo;
         line-height: 1.5;
         @media screen and (max-width: 600px){
-          font-size: @contactinfo * 0.9;
+          font-size: @contactinfo * 1.1;
+          text-align:center;
         }
         span.left {
           width: 5em;
@@ -64,6 +73,11 @@
     color: @darkblueink;
     font-size: @jobtitle;
     margin-bottom: 0;
+    @media screen and (max-width: 600px){
+      font-size:200%;
+      width:100%;
+      text-align:center;
+    }
     span {
       font: italic 100 @jobtitlespan/150% @defaultfont;
       color: @blueink;
@@ -148,6 +162,9 @@
         text-align: center;
       }
       ul {
+      @media screen and (max-width: 600px){
+        padding:0;
+      }
         li {
           list-style-type: none;
           display: inline-block;
@@ -155,6 +172,10 @@
           text-align: justify;
           margin-right: 6px;
           font-size: @skills;
+          @media screen and (max-width: 600px){
+            float:left;
+            margin-right:5px;
+          }
           span {
             color: @darkblueink;
             font-family: @headerfont;
@@ -186,4 +207,9 @@
       }// svg:hover
     }//.dl
   }//endresume
+
+  @media only screen and (max-width : 500px) {
+
+  }//@media
+
 }// #resume
