@@ -7,6 +7,40 @@
   width: auto;
   height: auto;
 }
+.intro h1 {
+  text-align: center;
+  margin: 10% 10% 5%;
+  font-size: 260%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: open sans;
+  font-weight: bold;
+}
+.intro p {
+  color: white;
+  margin: 0 20%;
+  text-align: center;
+  line-height: 1.5;
+  font-family: open sans;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.intro a {
+  text-align: center;
+  display: block;
+  border: 1px solid orange;
+  width: 200px;
+  margin: 5% auto;
+  padding: 15px;
+  color: orange;
+  font-family: open sans;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}
+.intro a:hover {
+  background-color: orange;
+  color: white;
+}
 .intro #videobg {
   position: absolute;
   top: 0px;
