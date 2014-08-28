@@ -1,3 +1,6 @@
+@import "../elements";
+
+
 /*
 MIXINS
 ===========*/
@@ -22,6 +25,33 @@ MIXINS
   font-family: open sans;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
+.button {
+  text-align: center;
+  display: block;
+  min-width: 200px;
+  width:200px;
+  margin: 5% auto;
+  padding: 15px;
+  color: white;
+  font-family: open sans;
+  text-decoration: none;
+  background-color: orange;
+  border:none;
+  border-radius: 2px;
+  cursor:pointer;
+  .transition-duration(@duration: 0.2s);
+
+  &:hover {
+    background-color:rgb(255, 204, 110);
+    color:darkorange;
+    .transition-duration(@duration: 0.2s);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+
 
 /*
 ===========*/
@@ -43,30 +73,22 @@ section {
   h1 {
     .bigtext;
   }
+  h2 {
+    .bigtext;
+    font-size:150%;
+  }
 
   p {
     .bigtextfollowup;
   }
 
-  .button {
-    text-align: center;
-    display: block;
-    border: 1px solid orange;
-    min-width: 200px;
-    width:200px;
-    margin: 5% auto;
-    padding: 15px;
-    color: orange;
-    font-family: open sans;
-    text-decoration: none;
-    background-color: rgba(255,255,255, 0.5);
-    border-radius: 2px;
-    cursor:pointer;
+  a.button {
+    .button;
+  }
 
-    &:hover {
-      background-color:orange;
-      color:white;
-    }
+  button {
+    .button;
+    width:400px;
   }
 }//section
 

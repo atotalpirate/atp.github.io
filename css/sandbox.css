@@ -1,0 +1,192 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+/*
+MIXINS
+===========*/
+.bigtext {
+  text-align: center;
+  margin: 10% auto 5%;
+  max-width: 80%;
+  font-size: 260%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: open sans;
+  font-weight: bold;
+}
+.bigtextfollowup {
+  color: white;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+  line-height: 1.5;
+  font-family: open sans;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.button {
+  text-align: center;
+  display: block;
+  min-width: 200px;
+  width: 200px;
+  margin: 5% auto;
+  padding: 15px;
+  color: white;
+  font-family: open sans;
+  text-decoration: none;
+  background-color: orange;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.button:hover {
+  background-color: #ffcc6e;
+  color: darkorange;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.button:focus {
+  outline: none;
+}
+/*
+===========*/
+/*
+DRY CSS
+===========*/
+section {
+  position: relative;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+section h1 {
+  text-align: center;
+  margin: 10% auto 5%;
+  max-width: 80%;
+  font-size: 260%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: open sans;
+  font-weight: bold;
+}
+section h2 {
+  text-align: center;
+  margin: 10% auto 5%;
+  max-width: 80%;
+  font-size: 260%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: open sans;
+  font-weight: bold;
+  font-size: 150%;
+}
+section p {
+  color: white;
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+  line-height: 1.5;
+  font-family: open sans;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+section a.button {
+  text-align: center;
+  display: block;
+  min-width: 200px;
+  width: 200px;
+  margin: 5% auto;
+  padding: 15px;
+  color: white;
+  font-family: open sans;
+  text-decoration: none;
+  background-color: orange;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+section a.button:hover {
+  background-color: #ffcc6e;
+  color: darkorange;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+section a.button:focus {
+  outline: none;
+}
+section button {
+  text-align: center;
+  display: block;
+  min-width: 200px;
+  width: 200px;
+  margin: 5% auto;
+  padding: 15px;
+  color: white;
+  font-family: open sans;
+  text-decoration: none;
+  background-color: orange;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  width: 400px;
+}
+section button:hover {
+  background-color: #ffcc6e;
+  color: darkorange;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+section button:focus {
+  outline: none;
+}
+#top #videobg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+#learnmore h1 {
+  color: #ccc;
+  text-shadow: none;
+}
+#learnmore p {
+  color: #dddddd;
+}
+#learnevenmore {
+  background-color: #ccc;
+}
+#learnevenmore h1 {
+  text-shadow: none;
+}
+#learnevenmore img {
+  width: 60%;
+  margin: 0 20%;
+}
