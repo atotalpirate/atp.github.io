@@ -4,7 +4,8 @@ MIXINS
 
 .bigtext {
   text-align: center;
-  margin: 10% 10% 5%;
+  margin: 10% auto 5%;
+  max-width:80%;
   font-size: 260%;
   color: white;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -14,7 +15,8 @@ MIXINS
 
 .bigtextfollowup {
   color: white;
-  margin: 0 20%;
+  margin: 0 auto;
+  max-width:80%;
   text-align: center;
   line-height: 1.5;
   font-family: open sans;
@@ -30,7 +32,7 @@ DRY CSS
 
 section {
   position: relative;
-  overflow:auto;
+  overflow:hidden;
   top: 0px;
   left: 0px;
   min-width: 100%;
@@ -68,7 +70,7 @@ section {
   }
 }//section
 
-.intro {
+#top {
   #videobg {
        position: absolute;
        top: 0px;

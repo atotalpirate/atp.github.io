@@ -896,13 +896,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/img\/Original_ Buttermilk_Pancakes.png": {
+	"\/_site\/img\/pancakes.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 56843,
-		"inputAbbreviatedPath": "\/_site\/img\/Original_ Buttermilk_Pancakes.png",
-		"outputAbbreviatedPath": "\/_site\/img\/Original_ Buttermilk_Pancakes.png",
+		"inputAbbreviatedPath": "\/_site\/img\/pancakes.png",
+		"outputAbbreviatedPath": "\/_site\/img\/pancakes.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5103,6 +5103,50 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/jquery.fitvids.js",
 		"outputAbbreviatedPath": "\/js\/min\/jquery.fitvids-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lazylinepainter\/jquery.lazylinepainter-1.1.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lazylinepainter\/jquery.lazylinepainter-1.1.min.js",
+		"outputAbbreviatedPath": "\/js\/lazylinepainter\/min\/jquery.lazylinepainter-1.1.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lazylinepainter\/jquery.lazylinepainter-1.4.1.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lazylinepainter\/jquery.lazylinepainter-1.4.1.min.js",
+		"outputAbbreviatedPath": "\/js\/lazylinepainter\/min\/jquery.lazylinepainter-1.4.1.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lazylinepainter\/raphael-min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lazylinepainter\/raphael-min.js",
+		"outputAbbreviatedPath": "\/js\/lazylinepainter\/min\/raphael-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/lazylinepainter\/svg.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/lazylinepainter\/svg.js",
+		"outputAbbreviatedPath": "\/js\/lazylinepainter\/min\/svg-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
