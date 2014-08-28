@@ -36,62 +36,9 @@ var $menuRight = $('#cbp-spmenu-s2'),
       $showRightPush.fadeToggle(300);
     });
 
-    var lastScrollTop = 0, delta = 5;
-     $(window).scroll(function(){
-        var st = $(this).scrollTop();
-
-        if(Math.abs(lastScrollTop - st) <= delta) {
-          if (st > lastScrollTop){
-              // downscroll code
-              $showRightPush.removeClass('on');
-              $menuRight.removeClass('cbp-spmenu-open');
-              $body.removeClass('cbp-spmenu-push-toleft');
-          } else {
-            // upscroll code
-            $showRightPush.removeClass('on');
-            $menuRight.removeClass('cbp-spmenu-open');
-            $body.removeClass('cbp-spmenu-push-toleft');
-          }
-          lastScrollTop = st;
-        }
-
-
-
-     });
-
-
-    // showTop.onclick = function() {
-    //     classie.toggle( this, 'active' );
-    //     classie.toggle( menuTop, 'cbp-spmenu-open' );
-    //     disableOther( 'showTop' );
-    // };
-    //
-    // showRightPush.onclick = function() {
-    //     classie.toggle( this, 'active' );
-    //     classie.toggle( body, 'cbp-spmenu-push-toleft' );
-    //     classie.toggle( menuRight, 'cbp-spmenu-open' );
-    //     disableOther( 'showRightPush' );
-    // };
-
-//     function disableOther( button ) {
-//     if( button !== 'showLeft' ) {
-//         classie.toggle( showLeft, 'disabled' );
-//     }
-//     if( button !== 'showRight' ) {
-//         classie.toggle( showRight, 'disabled' );
-//     }
-//     if( button !== 'showTop' ) {
-//         classie.toggle( showTop, 'disabled' );
-//     }
-//     if( button !== 'showBottom' ) {
-//         classie.toggle( showBottom, 'disabled' );
-//     }
-//     if( button !== 'showLeftPush' ) {
-//         classie.toggle( showLeftPush, 'disabled' );
-//     }
-//     if( button !== 'showRightPush' ) {
-//         classie.toggle( showRightPush, 'disabled' );
-//     }
-// }
-
+    $(window).scroll(function(){
+      $showRightPush.removeClass('on');
+      $menuRight.removeClass('cbp-spmenu-open');
+      $body.removeClass('cbp-spmenu-push-toleft');
+    });
 });
