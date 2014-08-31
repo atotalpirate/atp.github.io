@@ -1,0 +1,102 @@
+@import "../elements";
+
+
+/*
+GLOBAL
+=====================*/
+
+html, body {
+  min-width: 100%;
+  min-height:100%;
+}
+
+/*
+MIXINS
+=====================*/
+
+.bigtext {
+  text-align: center;
+  margin: 10% auto 5%;
+  max-width:80%;
+  font-size: 260%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  font-family: montserrat;
+  font-weight: bold;
+}
+
+.bigtextfollowup {
+  color: white;
+  margin: 0 auto;
+  max-width:80%;
+  text-align: center;
+  line-height: 1.5;
+  font-family: open sans;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+/*
+DRY
+=========================*/
+
+section {
+  position: relative;
+  overflow:hidden;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+  h1 {
+    .bigtext;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  h2 {
+    .bigtext;
+    font-size:150%;
+  }
+
+  p {
+    .bigtextfollowup;
+  }
+  form {
+    display: none;
+  }
+  #videobg {
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       min-width: 100%;
+       min-height: 100%;
+       width: auto;
+       height: auto;
+       z-index: -1000;
+       overflow: hidden;
+  }
+}//section
+
+header {
+  nav {
+    .logo {
+      background: url("/img/svg/wrlb_logo.svg");
+      width: 300px;
+      height: 100px;
+      display: block;
+      position: absolute;
+      background-repeat: no-repeat;
+      margin: 20px;
+    }
+    .contact {
+
+    }
+  }
+
+}
+#intro {
+
+}
