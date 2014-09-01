@@ -9,39 +9,47 @@ title: Wearalab
     <a href="#" class="logo">
       <!-- SVG -->
     </a>
-    <a class="contact" id="showRightPush" href="/contact/">Contact</a>
+    <a class="contact" id="show-contact" href="/contact/">Contact</a>
 </nav>
 
 </header>
 
+<div id="overlay"></div>
+
+<video id="videobg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+   <source src="/video/wearalabBG.webm" type="video/webm">
+   <source src="/video/wearalabBG.mp4" type="video/mp4">
+        Your browser sucks. You're the reason people like me have to stay late at work. UPGRADE YOUR FUCKING BROWSER YOU LEPTON.
+</video>
+
 <section id="intro">
 
-    <h1>Human activity recognition engines</h1>
+    <div class="push-horizontal">
 
-    <div class="hr"></div>
+      <h1>Human activity recognition engines</h1>
 
-    <div class="quote"></div>
+      <div class="hr"></div>
 
-  <video id="videobg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-     <source src="/video/wearalabBG.webm" type="video/webm">
-     <source src="/video/wearalabBG.mp4" type="video/mp4">
-          Your browser sucks. You're the reason people like me have to stay late at work. UPGRADE YOUR FUCKING BROWSER YOU LEPTON.
-  </video>
+      
 
-  <div class="push push-horizontal contact_form">
+    </div>
 
-    <form method="" action="#" >
+    <div class="contact-form">
 
-      <input type="text" id="name" class="half" name="name" placeholder="Your name.">
+      <h1>Got questions?</h1>
 
-      <input type="text" id="email" class="half" name="_replyto" placeholder="Your email.">
+      <form method="" action="#" >
 
-      <textarea id="comment" class="full" name="message" placeholder="Your question."></textarea>
+        <input type="text" id="name" class="half" name="name" placeholder="Your name.">
 
-      <button type="submit">Submit</button>
+        <input type="text" id="email" class="half" name="_replyto" placeholder="Your email.">
 
-    </form>
+        <textarea id="comment" class="full" name="message" placeholder="Your question."></textarea>
 
-  </div>
+        <button type="submit">Submit</button>
+
+      </form>
+
+    </div>
 
 </section>

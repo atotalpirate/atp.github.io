@@ -15,30 +15,27 @@ $(function() {
  });
 
 //push and slide menu variables
-var $menuRight = $('#cbp-spmenu-s2'),
-    $menuTop = $('#cbp-spmenu-s3'),
-    $showTop = $('#showTop'),
-    $showRightPush = $('#showRightPush'),
-    $body = $('body');
+var $contactForm = $('.contact-form'),
+    $pushHorizontal = $('.push-horizontal'),
+    $showContact = $('#show-contact');
 
 
-    $showRightPush.on('click', function(e){
+    $showContact.on('click', function(e){
       e.preventDefault();
       $(this).toggleClass('on');
-      $menuRight.toggleClass('cbp-spmenu-open');
-      $body.toggleClass('cbp-spmenu-push-toleft');
+      if ($(this).hasClass('on')) {
+        $(this).text("Back").fadeIn();
+      } else {
+        $(this).text("Contact").fadeIn();
+      }
+      $contactForm.toggleClass('contact-form-on');
+      $pushHorizontal.toggleClass('push-horizontal-on');
     });
 
-    $showTop.on('click', function(e){
-      e.preventDefault();
-      $(this).toggleClass('active');
-      $menuTop.toggleClass('cbp-spmenu-open');
-      $showRightPush.fadeToggle(300);
-    });
 
-    $(window).scroll(function(){
-      $showRightPush.removeClass('on');
-      $menuRight.removeClass('cbp-spmenu-open');
-      $body.removeClass('cbp-spmenu-push-toleft');
-    });
+    // $(window).scroll(function(){
+    //   $showRightPush.removeClass('on');
+    //   $menuRight.removeClass('cbp-spmenu-open');
+    //   $body.removeClass('push-toleft');
+    // });
 });

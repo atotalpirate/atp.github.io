@@ -9,6 +9,39 @@ html, body {
   min-width: 100%;
   min-height:100%;
 }
+header, nav > a {
+  z-index: 1000;
+}
+
+body, p {
+  font-family: arvo;
+}
+header > nav > a.contact {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  color: white;
+  font: bold 150% montserrat;
+  text-decoration:none;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+input, textarea {
+  padding: ;
+}
+
+#videobg {
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     min-width: 100%;
+     min-height: 100%;
+     width: auto;
+     height: auto;
+     z-index: -1000;
+     overflow: hidden;
+}
 
 /*
 MIXINS
@@ -16,8 +49,6 @@ MIXINS
 
 .bigtext {
   text-align: center;
-  margin: 10% auto 5%;
-  max-width:80%;
   font-size: 260%;
   color: white;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
@@ -28,16 +59,21 @@ MIXINS
 .bigtextfollowup {
   color: white;
   margin: 0 auto;
-  max-width:80%;
   text-align: center;
   line-height: 1.5;
-  font-family: open sans;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
 /*
 DRY
 =========================*/
+
+#overlay {
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: rgba(36,78,89, 0.6);
+}
 
 section {
   position: relative;
@@ -48,35 +84,32 @@ section {
   min-height: 100%;
   width: auto;
   height: auto;
+  .flex-display(@display: flex);
+  .flex-direction(@direction: column);
+  .align-items(@align: center);
+  .justify-content(@justify: center);
 
   h1 {
     .bigtext;
-    display: block;
+    display: inline-table;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    min-width: 100%;
+    margin: 0;
+    text-transform: uppercase;
   }
   h2 {
     .bigtext;
     font-size:150%;
+    position: relative;
+  }
+  .hr {
+    width: 200px;
+    border-bottom: 1px solid white;
+    margin: 3% auto 4%;
   }
 
   p {
     .bigtextfollowup;
-  }
-  form {
-    display: none;
-  }
-  #videobg {
-       position: absolute;
-       top: 0px;
-       left: 0px;
-       min-width: 100%;
-       min-height: 100%;
-       width: auto;
-       height: auto;
-       z-index: -1000;
-       overflow: hidden;
   }
 }//section
 
@@ -98,5 +131,91 @@ header {
 
 }
 #intro {
+  h1 {
+    margin-bottom:3%;
+  }
 
+  .quote {
+    p {
+      font-family: lato;
+      font-weight: 100;
+      font-size: 160%;
+      span {
+        font-family: arvo;
+        font-weight: ;
+        font-size:;
+      }
+    }
+  }
+
+  form {
+    margin: 0 auto;
+    max-width: 600px;
+    input, textarea, button {
+      padding: 3% 2%;
+      margin: 1%;
+      .rounded(@radius: 5px);
+      color: #244e59;
+      font-family: montserrat;
+      font-size: 120%;
+    }
+    .half {
+      width: 44%;
+      margin: 1%;
+      border: none;
+      outline: 0;
+      float: left;
+      display: block;
+    }
+    .full {
+      width: 94%;
+      margin: 1%;
+      border: none;
+      outline: 0;
+      float: right;
+      display: block;
+    }
+    button {
+      border: none;
+      text-transform: uppercase;
+      margin: 6% auto;
+      display: block;
+      background-color: #244e59;
+      color: white;
+      position: relative;
+      top: 20px;
+      padding: 2% 8%;
+    }
+  }
+}
+
+footer {
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  .social {
+    min-width:100%;
+    p {
+      font-size: 200%;
+      font-variant: italic;
+    }
+    a {
+      width: 100px;
+      display: block;
+      margin: 20px auto;
+      svg {
+        width: 100%;
+        fill: white;
+        .transition-duration(@duration: 0.2s);
+        &:hover {
+          fill: #00aeed;
+          .transition-duration(@duration: 0.2s);
+        }//hover
+      }//svg
+    }//a
+  }//social
 }

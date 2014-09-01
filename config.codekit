@@ -805,6 +805,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_site\/css\/wearalab.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/css\/wearalab.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/css\/wrlb-pushmenu.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -898,6 +907,28 @@
 		"initialSize": 807638,
 		"inputAbbreviatedPath": "\/_site\/img\/food.JPG",
 		"outputAbbreviatedPath": "\/_site\/img\/food.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/hotboxes-notype.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28916,
+		"inputAbbreviatedPath": "\/_site\/img\/hotboxes-notype.png",
+		"outputAbbreviatedPath": "\/_site\/img\/hotboxes-notype.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/img\/hotboxes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2137,
+		"inputAbbreviatedPath": "\/_site\/img\/hotboxes.png",
+		"outputAbbreviatedPath": "\/_site\/img\/hotboxes.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1434,6 +1465,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/js\/sandbox\/sandbox.js",
 		"outputAbbreviatedPath": "\/_site\/js\/sandbox\/min\/sandbox-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/js\/wearalab\/min\/wearalab-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/js\/wearalab\/min\/wearalab-min.js",
+		"outputAbbreviatedPath": "\/_site\/js\/wearalab\/min\/min\/wearalab-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -4877,6 +4919,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/hotboxes-notype.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28916,
+		"inputAbbreviatedPath": "\/img\/hotboxes-notype.png",
+		"outputAbbreviatedPath": "\/img\/hotboxes-notype.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hotboxes.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2137,
+		"inputAbbreviatedPath": "\/img\/hotboxes.png",
+		"outputAbbreviatedPath": "\/img\/hotboxes.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/html5.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -5409,6 +5473,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/sandbox\/sandbox.js",
 		"outputAbbreviatedPath": "\/js\/sandbox\/min\/sandbox-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/wearalab\/min\/wearalab-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/wearalab\/min\/wearalab-min.js",
+		"outputAbbreviatedPath": "\/js\/wearalab\/min\/min\/wearalab-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

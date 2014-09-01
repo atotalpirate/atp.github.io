@@ -12,80 +12,31 @@ body {
   min-width: 100%;
   min-height: 100%;
 }
-/*
-MIXINS
-=====================*/
-.bigtext {
-  text-align: center;
-  margin: 10% auto 5%;
-  max-width: 80%;
-  font-size: 260%;
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-family: montserrat;
-  font-weight: bold;
+header,
+nav > a {
+  z-index: 1000;
 }
-.bigtextfollowup {
-  color: white;
-  margin: 0 auto;
-  max-width: 80%;
-  text-align: center;
-  line-height: 1.5;
-  font-family: open sans;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+body,
+p {
+  font-family: arvo;
 }
-/*
-DRY
-=========================*/
-section {
-  position: relative;
-  overflow: hidden;
-  top: 0px;
-  left: 0px;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-section h1 {
-  text-align: center;
-  margin: 10% auto 5%;
-  max-width: 80%;
-  font-size: 260%;
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-family: montserrat;
-  font-weight: bold;
-  display: block;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-section h2 {
-  text-align: center;
-  margin: 10% auto 5%;
-  max-width: 80%;
-  font-size: 260%;
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-family: montserrat;
-  font-weight: bold;
-  font-size: 150%;
-}
-section p {
-  color: white;
-  margin: 0 auto;
-  max-width: 80%;
-  text-align: center;
-  line-height: 1.5;
-  font-family: open sans;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-section form {
-  display: none;
-}
-section #videobg {
+header > nav > a.contact {
   position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  color: white;
+  font: bold 150% montserrat;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+input,
+textarea {
+  padding: ;
+}
+#videobg {
+  position: fixed;
   top: 0px;
   left: 0px;
   min-width: 100%;
@@ -95,6 +46,95 @@ section #videobg {
   z-index: -1000;
   overflow: hidden;
 }
+/*
+MIXINS
+=====================*/
+.bigtext {
+  text-align: center;
+  font-size: 260%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: montserrat;
+  font-weight: bold;
+}
+.bigtextfollowup {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/*
+DRY
+=========================*/
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 78, 89, 0.6);
+}
+section {
+  position: relative;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+section h1 {
+  text-align: center;
+  font-size: 260%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: montserrat;
+  font-weight: bold;
+  display: inline-table;
+  position: relative;
+  min-width: 100%;
+  margin: 0;
+  text-transform: uppercase;
+}
+section h2 {
+  text-align: center;
+  font-size: 260%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: montserrat;
+  font-weight: bold;
+  font-size: 150%;
+  position: relative;
+}
+section .hr {
+  width: 200px;
+  border-bottom: 1px solid white;
+  margin: 3% auto 4%;
+}
+section p {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 header nav .logo {
   background: url("/img/svg/wrlb_logo.svg");
   width: 300px;
@@ -103,4 +143,96 @@ header nav .logo {
   position: absolute;
   background-repeat: no-repeat;
   margin: 20px;
+}
+#intro h1 {
+  margin-bottom: 3%;
+}
+#intro .quote p {
+  font-family: lato;
+  font-weight: 100;
+  font-size: 160%;
+}
+#intro .quote p span {
+  font-family: arvo;
+  font-weight: ;
+  font-size: ;
+}
+#intro form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+#intro form input,
+#intro form textarea,
+#intro form button {
+  padding: 3% 2%;
+  margin: 1%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #244e59;
+  font-family: montserrat;
+  font-size: 120%;
+}
+#intro form .half {
+  width: 44%;
+  margin: 1%;
+  border: none;
+  outline: 0;
+  float: left;
+  display: block;
+}
+#intro form .full {
+  width: 94%;
+  margin: 1%;
+  border: none;
+  outline: 0;
+  float: right;
+  display: block;
+}
+#intro form button {
+  border: none;
+  text-transform: uppercase;
+  margin: 6% auto;
+  display: block;
+  background-color: #244e59;
+  color: white;
+  position: relative;
+  top: 20px;
+  padding: 2% 8%;
+}
+footer {
+  display: inline;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+footer .social {
+  min-width: 100%;
+}
+footer .social p {
+  font-size: 200%;
+  font-variant: italic;
+}
+footer .social a {
+  width: 100px;
+  display: block;
+  margin: 20px auto;
+}
+footer .social a svg {
+  width: 100%;
+  fill: white;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+footer .social a svg:hover {
+  fill: #00aeed;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
