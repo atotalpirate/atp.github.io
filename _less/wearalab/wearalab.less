@@ -9,6 +9,7 @@ html, body {
   min-width: 100%;
   min-height:100%;
 }
+
 header, nav > a {
   z-index: 1000;
 }
@@ -16,17 +17,27 @@ header, nav > a {
 body, p {
   font-family: arvo;
 }
+
+header {
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+}
+
 header > nav > a.contact {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 20px;
-  color: white;
+  margin: 55px;
+  color: #294c59;
   font: bold 150% montserrat;
   text-decoration:none;
   text-transform: uppercase;
   cursor:pointer;
 }
+
 input, textarea {
   padding: ;
 }
@@ -116,7 +127,7 @@ section {
 header {
   nav {
     .logo {
-      background: url("/img/svg/wrlb_logo.svg");
+      background: url("/img/svg/wearalab.svg");
       width: 300px;
       height: 100px;
       display: block;
@@ -125,12 +136,13 @@ header {
       margin: 20px;
     }
     .contact {
-
+      color: #294c59;
     }
   }
 
 }
 #intro {
+  margin-top: 150px;
   h1 {
     margin-bottom:3%;
   }
@@ -180,8 +192,8 @@ header {
       text-transform: uppercase;
       margin: 6% auto;
       display: block;
-      background-color: #244e59;
-      color: white;
+      background-color: #d9e0e6;
+      color: #244e59;
       position: relative;
       top: 20px;
       padding: 2% 8%;
