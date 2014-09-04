@@ -55,7 +55,7 @@ MIXINS
   font-size: 260%;
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 .bigtextfollowup {
@@ -106,7 +106,7 @@ section h1 {
   font-size: 260%;
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   display: inline-table;
   position: relative;
@@ -120,7 +120,7 @@ section h1 {
     font-size: 260%;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     display: flexbox;
     font-size: 150%;
@@ -135,7 +135,7 @@ section h2 {
   font-size: 260%;
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 150%;
   position: relative;
@@ -193,7 +193,7 @@ header nav .contact {
   top: 0;
   margin: 55px;
   color: #294c59;
-  font: bold 150% montserrat;
+  font: bold 150% 'Montserrat', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -201,7 +201,7 @@ header nav .contact {
 @media only screen and (max-width: 650px) {
   header nav .contact {
     margin: 11px;
-    font: bold 150% montserrat;
+    font: bold 150% 'Montserrat', sans-serif;
   }
 }
 #intro h1 {
@@ -230,7 +230,7 @@ header nav .contact {
   -moz-border-radius: 5px;
   border-radius: 5px;
   color: #244e59;
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 120%;
 }
 #intro form .half {

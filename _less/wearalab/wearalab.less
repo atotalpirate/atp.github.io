@@ -1,5 +1,10 @@
 @import "../elements";
 
+@montserrat:'Montserrat', sans-serif;
+
+@nav-font: @montserrat;
+@title-font: @montserrat;
+
 
 /*
 GLOBAL
@@ -57,7 +62,7 @@ MIXINS
   font-size: 260%;
   color: white;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  font-family: montserrat;
+  font-family: @montserrat;
   font-weight: bold;
 }
 
@@ -174,7 +179,7 @@ header {
       top: 0;
       margin: 55px;
       color: #294c59;
-      font: bold 150% montserrat;
+      font: bold 150% @montserrat;
       text-decoration:none;
       text-transform: uppercase;
       cursor:pointer;
@@ -183,7 +188,7 @@ header {
     @media only screen and (max-width : 650px) {
       .contact {
         margin: 11px;
-        font: bold 150% montserrat;
+        font: bold 150% @montserrat;
       }
     }
   }
@@ -215,7 +220,7 @@ header {
       margin: 1%;
       .rounded(@radius: 5px);
       color: #244e59;
-      font-family: montserrat;
+      font-family: @montserrat;
       font-size: 120%;
     }
     .half {
