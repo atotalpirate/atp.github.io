@@ -27,16 +27,10 @@ header {
   background-color: white;
   top: 0;
 }
-header > nav > a.contact {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 55px;
-  color: #294c59;
-  font: bold 150% montserrat;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
+@media only screen and (max-width: 650px) {
+  header {
+    height: 50px;
+  }
 }
 input,
 textarea {
@@ -120,6 +114,22 @@ section h1 {
   margin: 0;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 650px) {
+  section h1 {
+    text-align: center;
+    font-size: 260%;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-family: montserrat;
+    font-weight: bold;
+    display: flexbox;
+    font-size: 150%;
+    position: relative;
+    min-width: 100%;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
 section h2 {
   text-align: center;
   font-size: 260%;
@@ -142,7 +152,12 @@ section p {
   line-height: 1.5;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-header nav .logo {
+@media only screen and (max-width: 650px) {
+  section {
+    top: -15%;
+  }
+}
+header nav .logo-desktop {
   background: url("/img/svg/wearalab.svg");
   width: 300px;
   height: 100px;
@@ -151,11 +166,43 @@ header nav .logo {
   background-repeat: no-repeat;
   margin: 20px;
 }
-header nav .contact {
-  color: #294c59;
+header nav .logo-mobile {
+  display: none;
+  background: url("/img/svg/wearalab-icon.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  margin: 20px;
 }
-#intro {
-  margin-top: 150px;
+@media only screen and (max-width: 650px) {
+  header nav .logo-desktop {
+    display: none;
+  }
+  header nav .logo-mobile {
+    background: url("/img/svg/wearalab-icon.svg");
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin: 7px;
+  }
+}
+header nav .contact {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 55px;
+  color: #294c59;
+  font: bold 150% montserrat;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media only screen and (max-width: 650px) {
+  header nav .contact {
+    margin: 11px;
+    font: bold 150% montserrat;
+  }
 }
 #intro h1 {
   margin-bottom: 3%;
@@ -248,4 +295,42 @@ footer .social a svg:hover {
   -webkit-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
+}
+footer .colophon {
+  clear: both;
+}
+@media only screen and (max-width: 650px) {
+  footer .social {
+    min-width: 80%;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  footer .social p {
+    display: none;
+  }
+  footer .social a {
+    width: 40px;
+    display: block;
+    margin: 10px auto;
+  }
+  footer .social a svg {
+    width: 100%;
+    fill: white;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+  }
+  footer .social a svg:hover {
+    fill: #00aeed;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+  }
+  footer .colophon {
+    clear: both;
+    font-size: 80%;
+  }
 }

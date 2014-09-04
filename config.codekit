@@ -1393,6 +1393,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/_site\/js\/min\/atp.menu-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/js\/min\/atp.menu-ck.js",
+		"outputAbbreviatedPath": "\/_site\/js\/min\/min\/atp.menu-ck-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/_site\/js\/min\/atp.scrollscript-ck.js": {
 		"fileType": 64,
 		"ignore": 1,

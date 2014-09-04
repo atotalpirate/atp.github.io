@@ -24,9 +24,9 @@ var $contactForm = $('.contact-form'),
       e.preventDefault();
       $(this).toggleClass('on');
       if ($(this).hasClass('on')) {
-        $(this).text("Back").fadeIn();
+        $(this).text("Back");
       } else {
-        $(this).text("Contact").fadeIn();
+        $(this).text("Contact");
       }
       $contactForm.toggleClass('contact-form-on');
       $pushHorizontal.toggleClass('push-horizontal-on');
