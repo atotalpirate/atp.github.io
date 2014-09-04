@@ -1,23 +1,12 @@
 //jquery is ready
 $(function() {
 
-  $('a[href^="#"]').click(function(e) {
-  e.preventDefault();
-
-  var target = this.hash,
-  $target = $(target);
-
-  $('html, body').stop().animate({
-      'scrollTop': $target.offset().top
-  }, 1000, function () {
-      window.location.hash = target;
-  });
- });
-
 //push and slide menu variables
 var $contactForm = $('.contact-form'),
     $pushHorizontal = $('.push-horizontal'),
-    $showContact = $('#show-contact');
+    $showContact = $('#show-contact'),
+    $desktopLogo = $('.logo-desktop'),
+    $mobileLogo = $('.logo-mobile');
 
 
     $showContact.on('click', function(e){
@@ -30,6 +19,24 @@ var $contactForm = $('.contact-form'),
       }
       $contactForm.toggleClass('contact-form-on');
       $pushHorizontal.toggleClass('push-horizontal-on');
+    });
+
+    $desktopLogo.on('click', function(e){
+      e.preventDefault();
+
+      if ($contactForm.hasClass('contact-form-on')){
+        $contactForm.toggleClass('contact-form-on');
+        $pushHorizontal.toggleClass('push-horizontal-on');
+      }
+    });
+
+    $mobileLogo.on('click', function(e){
+      e.preventDefault();
+
+      if ($("#contact").hasClass('contact-form-on')){
+        $contactForm.toggleClass('contact-form-on');
+        $pushHorizontal.toggleClass('push-horizontal-on');
+      }
     });
 
 
