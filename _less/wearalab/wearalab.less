@@ -53,6 +53,17 @@ input, textarea {
      overflow: hidden;
 }
 
+@media only screen and (max-width : 650px) {
+  #videobg {
+       display:none;
+  }
+  body {
+    background: url("/img/jesse.jpg");
+    background-size: cover;
+    z-index:-1;
+  }
+}
+
 /*
 MIXINS
 =====================*/
@@ -183,6 +194,7 @@ header {
       text-decoration:none;
       text-transform: uppercase;
       cursor:pointer;
+      z-index:1000;
     }
 
     @media only screen and (max-width : 650px) {

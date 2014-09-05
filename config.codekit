@@ -977,6 +977,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/img\/jesse.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.99124e+06,
+		"inputAbbreviatedPath": "\/_site\/img\/jesse.jpg",
+		"outputAbbreviatedPath": "\/_site\/img\/jesse.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/img\/jquery-wide.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1388,17 +1399,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/js\/min\/atp.frontheader-min.js",
 		"outputAbbreviatedPath": "\/_site\/js\/min\/min\/atp.frontheader-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/_site\/js\/min\/atp.menu-ck.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/js\/min\/atp.menu-ck.js",
-		"outputAbbreviatedPath": "\/_site\/js\/min\/min\/atp.menu-ck-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -4992,6 +4992,17 @@
 		"initialSize": 40286,
 		"inputAbbreviatedPath": "\/img\/jekyll.png",
 		"outputAbbreviatedPath": "\/img\/jekyll.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/jesse.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.99124e+06,
+		"inputAbbreviatedPath": "\/img\/jesse.jpg",
+		"outputAbbreviatedPath": "\/img\/jesse.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
